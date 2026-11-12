@@ -1,0 +1,21 @@
+{
+  "title": "Bắt đầu kể câu chuyện của bạn",
+  "duration": 9,
+  "segments": [
+    {
+      "start": 0,
+      "end": 3,
+      "text": "Bắt đầu với một chiếc điện thoại."
+    },
+    {
+      "start": 3,
+      "end": 6,
+      "text": "Tìm hướng có ánh sáng."
+    },
+    {
+      "start": 6,
+      "end": 9,
+      "text": "Chia sẻ câu chuyện ra."
+    }
+  ]
+}

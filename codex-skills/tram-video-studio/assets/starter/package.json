@@ -1,0 +1,34 @@
+{
+  "name": "tram-video",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local video automation with Vietnamese captions and sentence-based motion illustrations",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "plan": "tsx scripts/plan.ts",
+    "dev": "remotion studio studio-motion/src/index.ts --public-dir=public --no-open",
+    "render": "remotion render studio-motion/src/index.ts TramVideo out/video.mp4 --props=out/props.json --public-dir=public",
+    "test": "tsx --test src/lib/studio/sentence-effects.test.ts scripts/plan.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.537",
+    "@remotion/captions": "4.0.537",
+    "@remotion/cli": "4.0.537",
+    "@remotion/media": "4.0.537",
+    "@remotion/renderer": "4.0.537",
+    "remotion": "4.0.537",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "26.0.1",
+    "@types/react": "19.2.7",
+    "typescript": "5.9.3",
+    "tsx": "4.22.4"
+  }
+}

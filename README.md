@@ -51,3 +51,8 @@ Mã do dự án cung cấp: MIT, xem [LICENSE](LICENSE). Font Be Vietnam Pro: SI
 ## Đóng góp
 
 Xem [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) và [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Hướng phát triển: tích hợp ASR local tùy chọn, thêm minh họa đúng nghĩa, hỗ trợ video ngang và tài liệu dễ cài hơn.
+
+
+## Skill Codex dùng trên máy khác
+
+Tải và cài bộ **[tram-video-studio](codex-skills/README.md)** để dùng quy trình dựng, học mẫu và kiểm chất lượng trong Codex. **[Tải ZIP skill](https://github.com/manhlifecom-prog/tram-video/raw/refs/heads/main/downloads/tram-video-studio-20261112.zip)**. Bộ skill không kèm tài khoản/token, thư viện nhạc thương mại, dữ liệu khách hoặc máy chủ Trạm.

@@ -1,0 +1,38 @@
+# Source-safe local audio workflow
+
+Use one approved EDL for voice, captions, scenes, SFX and phone waveform. Keep original voice/speed, full clauses, negation and conditions. Check every first/last phoneme, breath and join against source and encoded result. ASR boundaries or silence thresholds alone are insufficient; do not hide half-word cuts by overlapping syllables. Small2–3ms gain ramps can reduce a confirmed waveform click but cannot restore a lost phoneme or prove a clean join. Review tiny handles inside verified gaps, or retain complete clauses to reduce fragile splices. Any changed source edge requires one shared new EDL and remapped assets; final video-frame alignment may add silence at the **tail only**, never retime speech.
+
+## Explicit local helper and limits
+
+`python3 scripts/mix-audio.py --help` describes source/plan/music/SFX/output arguments. Begin with `--check-only`. `--voice-output` requests a separate voice-only reference for QA/envelope generation; execution must use **separate single-output FFmpeg commands**, not one graph writing multiple media outputs. The generic helper is a preparation adapter, not a previously validated customer mix. Check its emitted commands and supported options; do not claim that it automatically implements every envelope, loop seam, source-safe gain ramp or listening decision described here. Missing required behavior must be implemented/reviewed explicitly before running, not silently omitted.
+
+`scripts/voice-envelope.py` can derive actual RMS values from the agreed voice-only reference and EDL; inspect its CLI and provenance fields. Use the resulting envelope for abstract speech bars/phone reaction, not a claim of phoneme lip sync. No decorative random waveform should be presented as measured voice. Source audio and raw speech-derived envelopes remain private customer data.
+
+## Music is the customer's choice, with rights evidence
+
+When a customer asks for the usual track, locate the exact selected source through project/manifest/previous reuse; do not substitute a different stock bed or another customer's music. Record source/hash/window, permission scope, credit and uncertainties. A customer selecting a platform sound does not establish commercial/publication/redistribution rights. Require suitable permission before the intended distribution. Music files, customer voice, raw footage and private account data must never be bundled as generic skill stock.
+
+Create a continuous intentional bed across the approved edit with voice foreground, useful entrances/transitions and an ending. Measure stems and short action windows before mixing, but audition actual track/fullmix for quality. If an approved existing track must repeat, inspect its source windows/onsets and choose a deliberate transition; no blind1-second loop or unrelated filler. A1.5-second equal-power seam was one private-case arrangement, not a universal formula or proof of harmonic/beat compatibility.
+
+For a repeated section of the **same cached track**, use independent local inputs. Schematic FFmpeg graph, with reviewed numeric windows:
+
+```text
+input0 = local track; input1 = same local track
+[0:a]atrim=MAIN_START:MAIN_END,asetpts=PTS-STARTPTS[a]
+[1:a]atrim=REPEAT_START:REPEAT_END,asetpts=PTS-STARTPTS[b]
+[a][b]acrossfade=d=REVIEWED_SECONDS:c1=qsin:c2=qsin[bed]
+```
+
+This is a schematic, not a copy-paste command with magic windows. Preserve float headroom before normalization/gain; do not clip raw bridge peaks to16-bit prematurely. Make one output per FFmpeg process. Actual local production exposed both a multi-output scheduler assertion and a shared-input/asplit→acrossfade early-EOF content bug: a file could report exit0/full duration yet contain music only in its first10seconds. Independent inputs and post-filter content checks addressed that case; no claim that all possible provider/tool versions are covered.
+
+## Action SFX and content checks
+
+Choose distinct material/attack/contact/tail per actual action, not an identical whoosh on every word or a larger layer count. A phone can have touch→ring→connection→reply→exit, each following actual animation contacts. Keep real voice clear; duck the music/SFX bus where appropriate rather than compressing away speech expression. Pick timbre and compare short stem levels at key contacts; merely increasing every gain does not prove better sound. Original synthesized effects should be labeled as designed sounds, not recorded physical Foley.
+
+Before accepting a master, check isolated **processed music after all filters** near the beginning/middle/ending, and verify the bus is actually present in the final mix (for example master-minus-mapped-voice/SFX against the isolated music at matched windows). Keep residual/limiter/codec rounding caveats. Check sample count, shared output/source map, peak/clipping, decode and encoded-master agreement separately. One aggregate LUFS reading can hide a silent ending. Preserve earlier masters, commands, hashes, rights, stem/window measurements and failed-attempt evidence; never use a withdrawn master as a package reference.
+
+Actual uninterrupted encoded playback/fullmix listening remains mandatory for clean syllables, good music, natural joins, perceptibility and creative approval. If no perceptual listening tool/reviewer is available, record **pending**; RMS, correlation, de-click, screenshots and ASR cannot become a false HEAR/creative PASS. A low voice-only correlation in a mix may need a same-master control, not a lowered threshold or an invented phoneme verdict.
+
+## External evidence, not customer payload
+
+These production lessons have separate operator-held provenance and failed-attempt receipts. Customer-specific audio/voice/master fingerprints, media, music, timing maps, identity and private host paths are not supplied in this generic package. A withdrawn file must stay clearly marked as failed in its private project and never become the next job's reference. Generic helper execution/clean-install and future customer music quality remain separate validation tasks.

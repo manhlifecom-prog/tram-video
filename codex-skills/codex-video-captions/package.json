@@ -1,16 +1,15 @@
 {
-  "name": "codex-video-captions-kit",
-  "version": "0.2.0-beta.1",
+  "name": "codex-video-captions",
+  "version": "0.3.0-beta.1",
   "private": true,
   "type": "module",
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24"
   },
   "scripts": {
-    "check": "node --test scripts/check-input.test.mjs scripts/cache-identity.test.mjs",
-    "validate": "node scripts/check-input.mjs",
-    "render": "node scripts/render.mjs",
-    "typecheck": "tsc --noEmit"
+    "render": "node scripts/run.mjs",
+    "check": "node scripts/preflight.mjs",
+    "test": "node --test tests/contract.test.mjs"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.537",

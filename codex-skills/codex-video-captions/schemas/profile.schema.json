@@ -1,146 +1,57 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Local sample DNA profile0.1.0",
   "type": "object",
   "required": [
-    "profileVersion",
-    "id",
-    "name",
-    "scope",
-    "palette",
-    "typography",
-    "layout",
-    "motion",
-    "preserve",
-    "cropRule"
+    "customer",
+    "status",
+    "provenance",
+    "confidence",
+    "explicitPreferences",
+    "referenceApproval",
+    "effectIntensity",
+    "safeMarginX",
+    "sourceTransformOrigin",
+    "readabilityGradient",
+    "colors"
   ],
   "properties": {
-    "profileVersion": {
-      "const": "0.1.0"
+    "safeMarginX": {
+      "type": "number",
+      "minimum": 60,
+      "maximum": 180
     },
-    "id": {
-      "type": "string",
-      "pattern": "^[a-z0-9-]{1,60}$"
-    },
-    "name": {
-      "type": "string"
-    },
-    "scope": {
-      "type": "string"
-    },
-    "palette": {
+    "colors": {
       "type": "object",
       "required": [
         "background",
         "surface",
-        "shape",
-        "shapeShade",
+        "line",
+        "sceneText",
         "text",
-        "accent",
+        "key",
         "soft",
-        "muted"
+        "glow",
+        "shadow",
+        "depthLight",
+        "depthMid",
+        "depthDark",
+        "materialHighlight",
+        "materialMid",
+        "materialShade"
       ],
       "additionalProperties": {
-        "type": "string",
-        "pattern": "^#[0-9a-fA-F]{6}$"
+        "type": "string"
       }
     },
-    "typography": {
-      "type": "object",
-      "required": [
-        "fontId",
-        "bodyScale",
-        "keyScale",
-        "shadowOpacity"
-      ],
-      "properties": {
-        "fontId": {
-          "const": "be-vietnam-pro"
-        },
-        "bodyScale": {
-          "type": "number",
-          "minimum": 0.8,
-          "maximum": 1.1
-        },
-        "keyScale": {
-          "type": "number",
-          "minimum": 0.8,
-          "maximum": 1.1
-        },
-        "shadowOpacity": {
-          "type": "number",
-          "minimum": 0,
-          "maximum": 0.6
-        }
-      }
+    "status": {
+      "enum": [
+        "PROPOSED_NOT_APPROVED",
+        "CUSTOMER_APPROVED"
+      ]
     },
-    "layout": {
-      "type": "object",
-      "required": [
-        "captionOffsetY",
-        "captionLeft",
-        "captionRight",
-        "videoFit"
-      ],
-      "properties": {
-        "captionOffsetY": {
-          "type": "number"
-        },
-        "captionLeft": {
-          "type": "number",
-          "minimum": 75,
-          "maximum": 200
-        },
-        "captionRight": {
-          "type": "number",
-          "minimum": 75,
-          "maximum": 200
-        },
-        "videoFit": {
-          "enum": [
-            "contain",
-            "cover"
-          ]
-        }
-      }
-    },
-    "motion": {
-      "type": "object",
-      "required": [
-        "policy",
-        "allowedModes",
-        "maxSpecialCuesInRow"
-      ],
-      "properties": {
-        "policy": {
-          "const": "mostly-phrase-sparse-emphasis"
-        },
-        "allowedModes": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "maxSpecialCuesInRow": {
-          "const": 1
-        }
-      }
-    },
-    "preserve": {
-      "type": "object",
-      "required": [
-        "faceIdentity",
-        "sourceVoice",
-        "liveSpeaker",
-        "semanticNegation"
-      ],
-      "additionalProperties": {
-        "const": true
-      }
-    },
-    "cropRule": {
+    "effectIntensity": {
       "type": "string",
-      "minLength": 20
+      "description": "Customer-specific choice, no global owner DNA"
     }
   }
 }

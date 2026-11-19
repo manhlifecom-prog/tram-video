@@ -1,0 +1,14 @@
+{
+  "releaseVersion": "0.3.0-beta.1",
+  "planContractVersion": "0.3.0-working.1",
+  "directPackages": {
+    "@remotion/bundler": "4.0.537",
+    "@remotion/renderer": "4.0.537",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.537",
+    "@types/react": "19.2.7",
+    "typescript": "5.9.3"
+  },
+  "note": "Exact seven direct package pins; no node_modules or transitive lock/install is bundled or newly verified. Optional native tools/model prerequisites documented separately."
+}

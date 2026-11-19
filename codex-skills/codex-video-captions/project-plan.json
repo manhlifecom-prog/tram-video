@@ -1,0 +1,171 @@
+{
+  "workingVersion": "0.3.0-working.1",
+  "status": "AUTHORING",
+  "exampleOnly": true,
+  "timelineClock": "source",
+  "requestedCapabilities": [
+    "captions",
+    "scenes"
+  ],
+  "source": {
+    "file": "input/your-source.mp4",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "duration": 8,
+    "width": 1080,
+    "height": 1920,
+    "rights": "Synthetic documentation only; replace with verified source rights"
+  },
+  "wordClock": {
+    "file": "data/your-source-clock.json",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sourceSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "basis": "Replace with actual source-bound token/phrase clock, estimates are not hearing evidence"
+  },
+  "fps": 30,
+  "totalFrames": 240,
+  "duration": 8,
+  "audioContentDuration": 8,
+  "segments": [
+    {
+      "sourceStart": 0,
+      "sourceEnd": 8,
+      "outputStart": 0,
+      "videoFrameStart": 0,
+      "videoFrameEndExclusive": 240
+    }
+  ],
+  "profile": {
+    "customer": "demo-project",
+    "status": "PROPOSED_NOT_APPROVED",
+    "provenance": "Synthetic neutral example, not an owner identity/default style",
+    "confidence": "Unverified until actual customer review",
+    "explicitPreferences": [],
+    "referenceApproval": "pending",
+    "effectIntensity": "CHOOSE_FOR_THIS_CUSTOMER",
+    "safeMarginX": 88,
+    "sourceTransformOrigin": "50% 12%",
+    "readabilityGradient": "linear-gradient(180deg,transparent 45%,rgba(0,0,0,.15) 60%,rgba(0,0,0,.7) 100%)",
+    "colors": {
+      "background": "#F5F5F5",
+      "surface": "#FFFFFF",
+      "line": "#777777",
+      "sceneText": "#303030",
+      "text": "#FFFFFF",
+      "key": "#FFFFFF",
+      "soft": "#EEEEEE",
+      "glow": "#FFFFFF50",
+      "shadow": "rgba(0,0,0,.45)",
+      "depthLight": "#CCCCCC",
+      "depthMid": "#999999",
+      "depthDark": "#444444",
+      "materialHighlight": "#FFFFFF",
+      "materialMid": "#DDDDDD",
+      "materialShade": "#888888"
+    }
+  },
+  "captions": [],
+  "subtitles": [
+    {
+      "id": "example-question",
+      "start": 0,
+      "end": 4,
+      "kind": "question",
+      "reason": "Synthetic semantic hierarchy example, replace with actual speech",
+      "blocks": [
+        {
+          "text": "A useful question",
+          "at": 0.5,
+          "sourceAnchor": 0.5,
+          "x": 100,
+          "y": 1280,
+          "size": 53,
+          "effect": "soft",
+          "width": 880,
+          "timingMode": "phrase",
+          "basis": "Synthetic anchor only"
+        },
+        {
+          "text": "WHAT MATTERS?",
+          "at": 1.5,
+          "sourceAnchor": 1.5,
+          "x": 100,
+          "y": 1400,
+          "size": 103,
+          "effect": "curious",
+          "width": 880,
+          "timingMode": "token",
+          "tokens": [
+            {
+              "text": "WHAT",
+              "at": 1.5
+            },
+            {
+              "text": "MATTERS?",
+              "at": 1.8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "example-growth",
+      "kind": "progress",
+      "start": 4,
+      "end": 8,
+      "readingOwner": "scene",
+      "overSource": true,
+      "reason": "Synthetic few-step improvement relation, not a mandatory preset",
+      "labels": [
+        {
+          "text": "PROGRESS",
+          "at": 4.3,
+          "x": 100,
+          "y": 1780,
+          "size": 46,
+          "color": "white"
+        }
+      ],
+      "actions": {
+        "path": 4.3
+      },
+      "data": {
+        "steps": [
+          {
+            "label": "1",
+            "at": 4.3
+          },
+          {
+            "label": "2",
+            "at": 5.3
+          },
+          {
+            "label": "3",
+            "at": 6.3
+          }
+        ]
+      }
+    }
+  ],
+  "semanticStages": [],
+  "motionEvents": [],
+  "attentionMoves": [],
+  "artWindows": [],
+  "behindShots": [],
+  "audio": {
+    "mode": "source"
+  },
+  "approval": {
+    "board": false,
+    "sourcePlan": false,
+    "fullRender": false
+  },
+  "subtitlePolicy": {
+    "base": "stable meaning-led clauses",
+    "wordMotion": "optional selected cue only",
+    "selectionBasis": "actual emotion, pace and customer-approved baseline; no preset quotas",
+    "ownerApproval": "required before final creative acceptance"
+  },
+  "wordCaptions": []
+}

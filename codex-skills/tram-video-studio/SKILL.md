@@ -1,8 +1,8 @@
 ---
 name: tram-video-studio
-description: Tên gọi tương thích của bộ Trạm Video cũ; chuyển yêu cầu dựng video người nói và phụ đề sang codex-video-captions phiên bản0.2.0-beta.1 đã cài cùng gói.
+description: Tên gọi tương thích của bộ Trạm Video cũ; chuyển yêu cầu dựng video người nói và phụ đề sang codex-video-captions phiên bản0.3.0-beta.1 đã cài cùng gói.
 metadata:
-  version: 0.2.0-beta.1
+  version: 0.3.0-beta.1
 ---
 
 # Chuyển sang skill hiện tại
@@ -11,4 +11,4 @@ metadata:
 
 Nếu không tìm thấy `codex-video-captions`, dừng phần dựng và đọc [hướng dẫn cài bản mới](https://github.com/manhlifecom-prog/tram-video/blob/main/FOR-CODEX.md). Không chạy workflow cũ thay thế âm thầm. Bộ cài sao lưu entrypoint cũ; tài nguyên/DNA riêng trong thư mục cũ được giữ nguyên.
 
-Bản mới chỉ là beta cho video người nói/chia sẻ chuyên môn và starter dọc đã mô tả. Không suy từ renderer legacy rằng bản mới hỗ trợ mọi format, tracking, ASR, đăng mạng xã hội hoặc một lệnh dựng xong từ raw. Gọi `$codex-video-captions` để chọn rõ bộ mới.
+Bản mới là beta workflow video người nói theo brief; đọc capability/setup của cùng entry trước khi làm. Không suy từ renderer legacy rằng bản mới hỗ trợ mọi format, tracking, ASR, đăng mạng xã hội hoặc một lệnh dựng xong từ raw. Gọi `$codex-video-captions` để chọn rõ bộ mới.

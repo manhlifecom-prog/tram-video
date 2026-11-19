@@ -1,0 +1,20 @@
+{
+  "editorial": true,
+  "reason": "Explicit topic label for this synthetic example, not claimed verbatim speech",
+  "start": 0,
+  "end": 5,
+  "question": "READY TO SHARE?",
+  "lead": "A CLEAR IDEA",
+  "main": "SPEAK WITH EASE",
+  "tail": "one step at a time",
+  "steps": [
+    "A",
+    "B",
+    "C"
+  ],
+  "questionFadeAt": 1.4,
+  "benefitAt": 1.8,
+  "focusAt": 2.2,
+  "impactAt": 3.7,
+  "stepsAt": 2.6
+}

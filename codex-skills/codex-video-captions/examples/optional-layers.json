@@ -1,0 +1,83 @@
+{
+  "semanticStages": [
+    {
+      "id": "chain",
+      "kind": "word-chain",
+      "start": 1,
+      "end": 4,
+      "readingOwner": "stage",
+      "x": 100,
+      "y": 1380,
+      "stepX": 300,
+      "stepY": 45,
+      "itemWidth": 280,
+      "itemHeight": 180,
+      "items": [
+        {
+          "text": "TRY",
+          "at": 1.2,
+          "size": 60
+        },
+        {
+          "text": "LEARN",
+          "at": 2,
+          "size": 52
+        },
+        {
+          "text": "IMPROVE",
+          "at": 2.8,
+          "size": 38
+        }
+      ],
+      "labels": []
+    }
+  ],
+  "motionEvents": [
+    {
+      "id": "growth-contact",
+      "start": 1,
+      "contact": 2.8,
+      "end": 4,
+      "kind": "growth",
+      "finiteBurst": true
+    }
+  ],
+  "artWindows": [
+    {
+      "id": "object",
+      "a": 1,
+      "b": 4,
+      "at": 2.8,
+      "q": 0,
+      "x": 500,
+      "y": 1300,
+      "size": 420
+    }
+  ],
+  "illustrations": {
+    "file": "illustrations/your-opaque-sheet.png",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "rights": "Your native-generated or otherwise rights-cleared asset",
+    "kind": "opaque-vignette-sheet"
+  },
+  "attentionMoves": [
+    {
+      "start": 1,
+      "end": 4,
+      "amplitude": 0.03,
+      "enter": 0.8,
+      "exit": 1
+    }
+  ],
+  "sfxManifest": {
+    "events": [
+      {
+        "file": "your-contact.wav",
+        "rights": "Your authored/licensed local sound",
+        "outputAt": 2.8,
+        "gain": 0.15
+      }
+    ]
+  },
+  "note": "Optional synthetic mechanisms; merge only when content calls for them and prerequisite assets exist"
+}

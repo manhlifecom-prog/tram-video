@@ -1,0 +1,18 @@
+# Author one complete video
+
+1. Intake rights, objective, audience, customer identity, exact source hash/orientation/color/duration, preferred reference/palette/music and requested pace. Universal readability/timing rules do not impose another customer's aesthetic.
+2. Probe the actual raw source. Use its existing hash-bound transcript or optional local ASR with explicit permission/resources. Do not use another edit's clock. Save raw transcript immutable; uncertain words remain flagged.
+3. Select whole clauses by meaning. Build one source/exact-audio/output-integer-frame map; no global speed retime by default. Review all joins for phonemes and meaning, not just waveform discontinuities.
+4. Author stable lead/main/tail phrases, selected source-anchored token/key motion, a few summaries or behind-person moments. Most explanations may remain calm. No fixed quota or random preset rotation. Use actual registered font measurements; include transformed bounds.
+5. Animate objects through setup → change/contact → consequence → exit. The phone enters, initiates/rings, connects, responds through actual voice RMS, then exits; not a static illustration. Use opaque AI vignette panels intentionally, never call a dirty cutout clean. B-roll is optional only when beautiful, meaningful, timed and rights-cleared.
+6. Mix ONE voice route: source OR fullmix including source voice. With a fullmix mute every source video. Music/SFX need rights and actual signal presence; judge them by listening. SFX follows authored action contacts, not every word.
+7. Review representative normal subtitles, first/key/last onset neighbors, phone progression, real matte edges, illustration composites, hook and ending. A static board approval authorizes a render, not final creative acceptance.
+8. Render once with frozen source/code/font/profile/clock/audio manifests. Cache identity includes every media byte, not filenames. Decode/check mapped AV windows and cut neighbors; then continuously watch/listen to the actual encoded output and collect owner feedback.
+
+The parent Film maps output time to source time before selecting DesignedCue/word captions/scene windows. DesignedCue geometry is explicit data (text/at/sourceAnchor/x/y/width/size/effect); token arrays are optional. Whole semantic keys stay on one line even during token reveal. Source palette comes from explicit customer profile, not a global brand default.
+
+The optional phone needs a real voice-RMS envelope file/hash, the current EDL hash, and `phoneMotion.voiceReferenceSha256` equal to that envelope receipt. Bars are driven by the referenced voice envelope; this is not a lip-sync or ASR accuracy claim. Missing envelope fails rather than substituting random pulses.
+
+Optional actual voice envelope preparation: `python3 scripts/voice-envelope.py --voice /path/output-clock-voice.wav --edl /path/edl.json --output data/voice-envelope.json --floor 0.004 --range 0.14`. These explicit normalization values are examples, not another customer's preset; review actual voice amplitude. Use `mix-audio.py --voice-output` to retain a separate voice reference when preparing a mix. Both commands are optional, require existing FFmpeg and remain unexecuted in this generic candidate.
+
+Before media, run `node scripts/preflight.mjs project-plan.json` for source/profile/clock/assets hashes and capability prerequisites without loading Remotion or launching a browser. The neutral synthetic example fails explicitly until real source-bound input replaces it.

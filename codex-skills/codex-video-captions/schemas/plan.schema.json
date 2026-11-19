@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "One local source-clock film plan0.3working1",
+  "type": "object",
+  "required": [
+    "audioContentDuration",
+    "semanticStages",
+    "approval",
+    "segments",
+    "audio",
+    "requestedCapabilities",
+    "artWindows",
+    "timelineClock",
+    "motionEvents",
+    "behindShots",
+    "totalFrames",
+    "status",
+    "fps",
+    "subtitles",
+    "workingVersion",
+    "profile",
+    "duration",
+    "attentionMoves",
+    "scenes",
+    "wordClock",
+    "source"
+  ],
+  "properties": {
+    "workingVersion": {
+      "const": "0.3.0-working.1"
+    },
+    "timelineClock": {
+      "const": "source"
+    },
+    "fps": {
+      "const": 30
+    },
+    "duration": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 1800
+    },
+    "totalFrames": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 54000
+    },
+    "profile": {
+      "$ref": "profile.schema.json"
+    },
+    "subtitles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "start",
+          "end",
+          "reason",
+          "blocks"
+        ]
+      }
+    },
+    "segments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "sourceStart",
+          "sourceEnd",
+          "outputStart",
+          "videoFrameStart",
+          "videoFrameEndExclusive"
+        ]
+      }
+    },
+    "behindShots": {
+      "type": "array"
+    },
+    "artWindows": {
+      "type": "array"
+    },
+    "audio": {
+      "type": "object",
+      "required": [
+        "mode"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "source",
+            "fullmix"
+          ]
+        }
+      }
+    },
+    "openingHook": {
+      "type": "object",
+      "required": [
+        "editorial",
+        "reason",
+        "start",
+        "end",
+        "question",
+        "lead",
+        "main",
+        "tail",
+        "steps",
+        "questionFadeAt",
+        "benefitAt",
+        "focusAt",
+        "impactAt",
+        "stepsAt"
+      ],
+      "properties": {
+        "editorial": {
+          "const": true
+        },
+        "reason": {
+          "type": "string"
+        },
+        "start": {
+          "type": "number",
+          "minimum": 0
+        },
+        "end": {
+          "type": "number",
+          "minimum": 0
+        },
+        "questionFadeAt": {
+          "type": "number",
+          "minimum": 0
+        },
+        "benefitAt": {
+          "type": "number",
+          "minimum": 0
+        },
+        "focusAt": {
+          "type": "number",
+          "minimum": 0
+        },
+        "impactAt": {
+          "type": "number",
+          "minimum": 0
+        },
+        "stepsAt": {
+          "type": "number",
+          "minimum": 0
+        },
+        "question": {
+          "type": "string"
+        },
+        "lead": {
+          "type": "string"
+        },
+        "main": {
+          "type": "string"
+        },
+        "tail": {
+          "type": "string"
+        },
+        "steps": {
+          "type": "array",
+          "maxItems": 4,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "description": "Guide plus executable check-plan/preflight; declarations do not prove semantic/hearing quality"
+}

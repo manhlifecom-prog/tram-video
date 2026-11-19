@@ -1,204 +1,88 @@
 {
   "schemaVersion": 1,
-  "version": "0.2.0-beta.1",
   "skill": "codex-video-captions",
-  "compatibilitySkill": "tram-video-studio",
-  "status": "public-beta-for-testing-not-sale-ready",
+  "version": "0.3.0-beta.1",
+  "status": "clean-shared-beta-not-universal-or-sale-guarantee",
   "files": [
+    {
+      "path": "codex-video-captions/DEPENDENCY-PINS.json",
+      "bytes": 500,
+      "sha256": "ddd72e699fec3de0aff52848b16bd1489f380ea823bdca1b9a64b08d2b122df5"
+    },
     {
       "path": "codex-video-captions/LICENSE",
       "bytes": 1082,
       "sha256": "7cd2ac9bf82938757414d733432876452fe551efa873a66404c7bfb7c3efc2cf"
     },
     {
-      "path": "codex-video-captions/LICENSE-NOTICE.md",
-      "bytes": 1393,
-      "sha256": "f45f1cc26ff4a3f2d69f93ebb269f9b9205e1a9fd1f41b61e2c04de5aedf8d0c"
-    },
-    {
       "path": "codex-video-captions/MANIFEST.json",
-      "bytes": 9223,
-      "sha256": "f22ec6854946b23949cd986a50d873b2301e2a3ff363e9915bde74628fb95d9e"
-    },
-    {
-      "path": "codex-video-captions/PROVENANCE.json",
-      "bytes": 3068,
-      "sha256": "da42a29e1946f3f06063aa6af846c1f1b6ec7bb09c9142c3455e6772a622f11a"
-    },
-    {
-      "path": "codex-video-captions/QUICKSTART.md",
-      "bytes": 4228,
-      "sha256": "05a043dda4aa5e184ddfd6ea025b619ee80afa8ceb262c33653154c70bbe2b13"
+      "bytes": 8146,
+      "sha256": "858198eb131e8c413aa00c85815a2b0c70811f38e032ec92278b7fc1b973454d"
     },
     {
       "path": "codex-video-captions/README.md",
-      "bytes": 4376,
-      "sha256": "f54cbad22a3d6cc5cab9b733f8af815e5ee6439e8570cb69b23ccfd47588c976"
+      "bytes": 1938,
+      "sha256": "248aa081cf335434e4449d04586759c5fb6030d0ad6e7cabe568b668155faefc"
     },
     {
       "path": "codex-video-captions/SKILL.md",
-      "bytes": 5715,
-      "sha256": "19e16d3e4bdc1da4589162da0cf08b57839e8af8aa2d61e27c3fcf7cd8ba9b99"
+      "bytes": 1664,
+      "sha256": "0b3b61a6e9051828dca04c0b776c1ddcbf605bdf705554264d2a0b20686d6f03"
     },
     {
-      "path": "codex-video-captions/assets/EmotionalCaption.tsx",
-      "bytes": 10516,
-      "sha256": "d4d06cbc9cfff6917a6bb131e01079dbb04b63cf4fcaa778efaabd0079fa0ed3"
+      "path": "codex-video-captions/assets/ExpressiveSubtitles.tsx",
+      "bytes": 5094,
+      "sha256": "98c62677a5348a2a494ad4428109906a964e3778488caa4e195897bac1b41499"
     },
     {
-      "path": "codex-video-captions/assets/EmotionalCaptionProfiled.tsx",
-      "bytes": 11345,
-      "sha256": "69175a4564fbbc5a8442bf9438713b4d48935d83b14f2358c36c61b6149e44ec"
+      "path": "codex-video-captions/assets/WordFontAudit.tsx",
+      "bytes": 2030,
+      "sha256": "972e7232a862a46d4e24fa9f2911fbe42a39472b83f0a38ce6c99c5edbb9b9c2"
     },
     {
-      "path": "codex-video-captions/examples/demo-v1.json",
-      "bytes": 1656,
-      "sha256": "0c0762ac3cf6cf033b1ec555487814e3973866792b62e7751ee62d6ec0934998"
+      "path": "codex-video-captions/assets/emotional-caption/EmotionalCaption.tsx",
+      "bytes": 11409,
+      "sha256": "aa2e34c0ed1abf2d3cb9b9f90c051f24c66a8e691e68367bea5bdc1cd81b0f9e"
     },
     {
-      "path": "codex-video-captions/examples/demo-v2.json",
-      "bytes": 1689,
-      "sha256": "94089fb93edf7155ca6d693e5ce35fb81a35560c04575188a5ced7d5d3998bf1"
+      "path": "codex-video-captions/assets/phone-motion/PhoneCall.tsx",
+      "bytes": 5511,
+      "sha256": "f73c421b86754d8e15c03c3a2ad4492a630dd1e1adf9f25764852bff5bc6056c"
     },
     {
-      "path": "codex-video-captions/examples/feedback-v2.json",
-      "bytes": 387,
-      "sha256": "19e9d87a2f20fab45baf5f7dddd208e061c2f9e27969c21dba62b631b3ba98be"
+      "path": "codex-video-captions/examples/behind-shot.json",
+      "bytes": 1041,
+      "sha256": "7febd2a97cf93aff127806324121574651b333c4de1e3b7d78adf5e2634f4ec8"
     },
     {
-      "path": "codex-video-captions/examples/input-brief.json",
-      "bytes": 1315,
-      "sha256": "ed77f91f8ab2f4fdfe4386c506232219691a0028a40f3dff417ff362b5f28232"
+      "path": "codex-video-captions/examples/neutral-plan.json",
+      "bytes": 4365,
+      "sha256": "9c301775abdba300600cb731050b0abd2427b4fa5a4cdb18634a50226e38d32d"
     },
     {
-      "path": "codex-video-captions/examples/profile-a-new-input.json",
-      "bytes": 1711,
-      "sha256": "b821b69d57d6183dc351634669df1113f0d6ea7a53976ea4aeb9b8fb1e891096"
+      "path": "codex-video-captions/examples/opening-hook.json",
+      "bytes": 406,
+      "sha256": "46063376050d5e27c8b126b470063247746b0d21be9165bde86b3c134f608c2a"
     },
     {
-      "path": "codex-video-captions/examples/profile-a-same-input.json",
-      "bytes": 1680,
-      "sha256": "296d62c0ee28070143f2147be8e589edccfa570020d1ff7070652738c3eecbe2"
+      "path": "codex-video-captions/examples/optional-layers.json",
+      "bytes": 1644,
+      "sha256": "a3c3aa31a337f2ba832e36768774ad77c872a035c132d819f8173d0fd4524aa6"
     },
     {
-      "path": "codex-video-captions/examples/profile-b-same-input.json",
-      "bytes": 1680,
-      "sha256": "addf5002ca3cc1c717c4f29afd399434877627d3de4bc72588f617412ec09548"
+      "path": "codex-video-captions/examples/phone-motion.json",
+      "bytes": 1577,
+      "sha256": "ead73d4670163ccf03be837bcea8b542ee7fcb8d7963acbb3841f119ada3fd2f"
     },
     {
       "path": "codex-video-captions/package.json",
-      "bytes": 680,
-      "sha256": "a90ee462d7ab850979ecd3f9024fea46b238fe9415ca70f6e11b8929c316a7ba"
+      "bytes": 597,
+      "sha256": "7db533133db2a3480eac23c58b7890ad327f922c7f2e7fc04e7da51de1adf119"
     },
     {
-      "path": "codex-video-captions/profiles/demo-a.json",
-      "bytes": 1202,
-      "sha256": "722a261a405910b8f439d4c74efc8daf733bf86bce878c7ba8482c8126fd8b08"
-    },
-    {
-      "path": "codex-video-captions/profiles/demo-b.json",
-      "bytes": 1210,
-      "sha256": "57f91f8bcc2afe8a6f49aeeddd2c489b6c7a69ea1a611e4782765cd75e8b063b"
-    },
-    {
-      "path": "codex-video-captions/proof/DNA-CHECK.json",
-      "bytes": 562,
-      "sha256": "8d193a5a2ae7bbec4c8a7272ac7a7255927f715e1a7544dd0fa78d9c10200024"
-    },
-    {
-      "path": "codex-video-captions/proof/PROOF-REPORT.md",
-      "bytes": 3567,
-      "sha256": "05de0d662e14ca6faa8e01c020594839f12a5c01ff7f14fbffb54a5e9bec2b0e"
-    },
-    {
-      "path": "codex-video-captions/proof/decode-checks.json",
-      "bytes": 451,
-      "sha256": "fb415d897f4d8292dcf6d75b7895900d37a55e8595707845d9ecef5d9987a2f6"
-    },
-    {
-      "path": "codex-video-captions/proof/demo-v1.mp4",
-      "bytes": 454615,
-      "sha256": "ecd51dc0ae8a05b1b39919eed3e1be70a20be3a7a4e72843fb99eca9fc9a68a5"
-    },
-    {
-      "path": "codex-video-captions/proof/demo-v1.png",
-      "bytes": 420425,
-      "sha256": "4a29d0c6dcb84fdfe3200d2a5bd7fea9727449dbe93881ffd5b6a7aade73e24a"
-    },
-    {
-      "path": "codex-video-captions/proof/demo-v1.receipt.json",
-      "bytes": 894,
-      "sha256": "f51f90e83b3fb9cbca166359d5b07290f801eaaf3091d12d067a098752643ea2"
-    },
-    {
-      "path": "codex-video-captions/proof/demo-v2.mp4",
-      "bytes": 448822,
-      "sha256": "89bd29bf3ff9ace8ed2336f46d2b59e6c3ff464ee855fc6848158a6dda98b7d1"
-    },
-    {
-      "path": "codex-video-captions/proof/demo-v2.png",
-      "bytes": 420612,
-      "sha256": "2736a88c5e802bb439ce3296b0639b93813396245cb901b0f85276df39cb791c"
-    },
-    {
-      "path": "codex-video-captions/proof/demo-v2.receipt.json",
-      "bytes": 894,
-      "sha256": "aabf5081ecbb2d6952ea0e74ee2e3c20cd5e82fb7e0f37bc11abcc5b4917569d"
-    },
-    {
-      "path": "codex-video-captions/proof/package-checks.json",
-      "bytes": 353,
-      "sha256": "2740bf25128221ffd58aee40e64f33438650559eba21299c76c68fe619ed1a58"
-    },
-    {
-      "path": "codex-video-captions/proof/profile-a-new-input.mp4",
-      "bytes": 449364,
-      "sha256": "530cb14887523d1ebc88d01b5ea23bac42d38be97cdd8d0c37afef36d08c57d8"
-    },
-    {
-      "path": "codex-video-captions/proof/profile-a-new-input.png",
-      "bytes": 417749,
-      "sha256": "9622ae85571d8cc1c93ceaf71c73db44df11def995d9051cf45045c86814b0e6"
-    },
-    {
-      "path": "codex-video-captions/proof/profile-a-new-input.receipt.json",
-      "bytes": 1016,
-      "sha256": "335ccabb639784cecfea708b504b1d95c31dc0710083ced827a2d296d21aa7c4"
-    },
-    {
-      "path": "codex-video-captions/proof/profile-a-same-input.mp4",
-      "bytes": 453497,
-      "sha256": "420d15b9423ac4b06cce0949596f04531bf2ba83c7bbd1dd5acbca150ff47a1f"
-    },
-    {
-      "path": "codex-video-captions/proof/profile-a-same-input.png",
-      "bytes": 419535,
-      "sha256": "f9d51ca01127801496d1b3221fd02dd64e21b13a1e992464c783ee51d0fb242f"
-    },
-    {
-      "path": "codex-video-captions/proof/profile-a-same-input.receipt.json",
-      "bytes": 1018,
-      "sha256": "a4e6b815e91b575b3b21af351200055983b0b1af09768d2130cb87c495808919"
-    },
-    {
-      "path": "codex-video-captions/proof/profile-b-same-input.mp4",
-      "bytes": 439987,
-      "sha256": "621f8b2510668da7f8d5a6e51a24f12ac483ea902a84a314f4cb331a9f382622"
-    },
-    {
-      "path": "codex-video-captions/proof/profile-b-same-input.png",
-      "bytes": 361458,
-      "sha256": "50976f24793d2d875cfe40ba6df9d9346476555ac41f54399e0ca7110466e29f"
-    },
-    {
-      "path": "codex-video-captions/proof/profile-b-same-input.receipt.json",
-      "bytes": 1018,
-      "sha256": "102176ba2af77c5d6a8382a801550be1f37d886fd45661a3fbdf041e6c367299"
-    },
-    {
-      "path": "codex-video-captions/proof/validator-tests.log",
-      "bytes": 979,
-      "sha256": "a56cf349ed50646842ceaeecfd241e81a63ae098ab70516599221c0812d59111"
+      "path": "codex-video-captions/project-plan.json",
+      "bytes": 4365,
+      "sha256": "9c301775abdba300600cb731050b0abd2427b4fa5a4cdb18634a50226e38d32d"
     },
     {
       "path": "codex-video-captions/public/fonts/BeVietnamPro-Bold.ttf",
@@ -221,102 +105,149 @@
       "sha256": "6b7f8f73609a25ea78c891e34cf37b06f8a676b7ea986e941e43b009110f2a85"
     },
     {
-      "path": "codex-video-captions/references/PROFILE-GUIDE.md",
-      "bytes": 3087,
-      "sha256": "d30334a7a9f7f8a6c1e874d108410dd300eab449e5802657de07fb1ee12a9684"
+      "path": "codex-video-captions/references/CAPABILITIES.md",
+      "bytes": 3493,
+      "sha256": "7509307a7630209c55b8342d7d715a60702a3d8378ea13f34021da6ed32bf2de"
     },
     {
-      "path": "codex-video-captions/references/emotional-typography.md",
-      "bytes": 1957,
-      "sha256": "1625593bcce8b6bab557267974a438cae703c90b969e4650d9dc21ccf963e5fb"
+      "path": "codex-video-captions/references/MATTE-COMMANDS.md",
+      "bytes": 2190,
+      "sha256": "0f5e59ec7efcaf03fcc7c918d9cc461c9e14c6376079d26d13987f6ec00a4f0a"
     },
     {
-      "path": "codex-video-captions/references/subtitle-formula.md",
-      "bytes": 3486,
-      "sha256": "8684606a8f314e6f49db2a7e7a2d8dcea6c616d1d2a96476cd5b703c16f72b7a"
+      "path": "codex-video-captions/references/MEDIA-RECIPES.md",
+      "bytes": 959,
+      "sha256": "e080d7d252e63bad00c89448a175514081fef619f5c87466d58b2af31dda5ebb"
     },
     {
-      "path": "codex-video-captions/renderer/index.tsx",
-      "bytes": 4084,
-      "sha256": "d692de46a082019f5cd25d0debba789c67aaf670d0bcb97c37c283153b9bc62b"
+      "path": "codex-video-captions/references/PROVENANCE.md",
+      "bytes": 2708,
+      "sha256": "8b77ae803dcbbf40671c114700cba95a04d0e07331694a11266d9eb7d2d409da"
     },
     {
-      "path": "codex-video-captions/schemas/input-brief.schema.json",
-      "bytes": 2376,
-      "sha256": "f156c0f55a42a9a401fb9bd6e34419cd34399717d7ddfd6ca572ab6ff2696586"
+      "path": "codex-video-captions/references/WORKFLOW.md",
+      "bytes": 3512,
+      "sha256": "020a565b8e215bbbf2e27ca7fa10c97bfc72bd9fadf4f8769200a52b112955fc"
+    },
+    {
+      "path": "codex-video-captions/references/audio-recipe.md",
+      "bytes": 6077,
+      "sha256": "a559ea6143c2fbabb02b4663aa0e809bc020ccf43211ec1b3fb438c8e78bd6f2"
+    },
+    {
+      "path": "codex-video-captions/references/setup-and-install.md",
+      "bytes": 6525,
+      "sha256": "1ee0d7d0821e3ae5dd2f53806ecb27c38c53f63c56144906f02febced54e8f94"
+    },
+    {
+      "path": "codex-video-captions/schemas/plan.schema.json",
+      "bytes": 3372,
+      "sha256": "bac4ec1fce264393a4c8e375b300ae2909eb9a0d67c82d051c9f7e992b7bb786"
     },
     {
       "path": "codex-video-captions/schemas/profile.schema.json",
-      "bytes": 2828,
-      "sha256": "6616ec184d1376572c965e7f15d5156cb1b058ab803b615fa7e663c337bfcb3f"
+      "bytes": 1122,
+      "sha256": "c75be0aed607a47d881718280049b3e88da4bb655ac01b0baedb2d32590b0275"
     },
     {
-      "path": "codex-video-captions/schemas/render-input.schema.json",
-      "bytes": 4594,
-      "sha256": "f51b0c948b2ca22d9d23c31ba98f05dfb90e05748db730d6c6d509b0eaef060c"
+      "path": "codex-video-captions/scripts/SubjectMatte.swift",
+      "bytes": 3706,
+      "sha256": "720806fa5d762ce8f9b356e4daae232a474acd3a8910ff3d9cfeaf725ab40e15"
+    },
+    {
+      "path": "codex-video-captions/scripts/asr-offline.py",
+      "bytes": 6490,
+      "sha256": "e924879190075d4bb15013c36477acf85036f07a25c25d8a0fc151771fd2cc56"
     },
     {
       "path": "codex-video-captions/scripts/cache-identity.mjs",
-      "bytes": 1137,
-      "sha256": "e2f667206568127be5ccf04051d7d24cd32da7f5dd46a9a132b7aeb5eb6fa00e"
+      "bytes": 427,
+      "sha256": "35794a40b23df378248db47911b8f2030e37e84fd07bb75e850edfc4ee9579e6"
     },
     {
-      "path": "codex-video-captions/scripts/cache-identity.test.mjs",
-      "bytes": 1881,
-      "sha256": "475093cb738c1a7fe45d010d7b20ff8e7983ebc78d8d9df02acf26b3009679fb"
+      "path": "codex-video-captions/scripts/check-environment.mjs",
+      "bytes": 4666,
+      "sha256": "7383937098ab805dd951d2fc2c4b99a4046a5dad4be6551b2bcc764634d6445c"
     },
     {
-      "path": "codex-video-captions/scripts/check-input.mjs",
-      "bytes": 7702,
-      "sha256": "734c8bc9954a22f4d1499cd67c686185fc84f48fd49011cc132508c4d7829a20"
+      "path": "codex-video-captions/scripts/check-plan.mjs",
+      "bytes": 7537,
+      "sha256": "7437af71c0214feb3bb29286c1cbe2a32ae0004187cbbfbca23ac38e27f222d3"
     },
     {
-      "path": "codex-video-captions/scripts/check-input.test.mjs",
-      "bytes": 3553,
-      "sha256": "2ea3ffd9d359272b78d4e9fb2797332539e9da8e7302a24f136467794c92532d"
+      "path": "codex-video-captions/scripts/install.py",
+      "bytes": 6065,
+      "sha256": "d6286a866afd08d55c67490347edb6a6902354446130368cb772831fbf809398"
+    },
+    {
+      "path": "codex-video-captions/scripts/matte-manifest.py",
+      "bytes": 1969,
+      "sha256": "d7876d44b631712facd254b3fe9b827997f1236c48766ae3691deff6981177ed"
+    },
+    {
+      "path": "codex-video-captions/scripts/mix-audio.py",
+      "bytes": 4046,
+      "sha256": "7526e09c97c989a43ac77116590e874cb91a15aaa37943a2f6cb14802351cedc"
+    },
+    {
+      "path": "codex-video-captions/scripts/preflight.mjs",
+      "bytes": 4998,
+      "sha256": "b203e38dc82943cfb41ced09dd0d473dd09a3813f5e089c13f68c53e28b04e5a"
     },
     {
       "path": "codex-video-captions/scripts/render.mjs",
-      "bytes": 4409,
-      "sha256": "0ec537ea8d2d2ee44b561f685584f471cf7f7a663dda67776b4dd553c186dcdf"
+      "bytes": 6078,
+      "sha256": "d2ec9f79a5b87fc7b622a47545afd6537f98e00875a1159e6aacaa16535011a1"
     },
     {
-      "path": "codex-video-captions/tsconfig.json",
-      "bytes": 378,
-      "sha256": "258bd8ab837c61132c3e9a4d892e6e89545ec8c6c043f7ab76a368118e8192bb"
+      "path": "codex-video-captions/scripts/run.mjs",
+      "bytes": 1339,
+      "sha256": "463d95113edd963985cb526fe567c3bf7e36e0ff62bcae85e259fb0afe02c2f4"
     },
     {
-      "path": "tram-video-studio/SKILL.md",
-      "bytes": 1374,
-      "sha256": "69dacf35c2db4fb94c2e04b618de893afb086497c709d3285a28eaed101723c9"
+      "path": "codex-video-captions/scripts/voice-envelope.py",
+      "bytes": 2265,
+      "sha256": "5d06982ec6cbc34aae886d9d5fa6c857bf9f092cddc7964da00b0521c016e541"
+    },
+    {
+      "path": "codex-video-captions/src/ArtVignettes.tsx",
+      "bytes": 1424,
+      "sha256": "d42847e3fc025a1e512d27de8e0000fd875f9df6296897b2c28aa9d7a1fa6b1f"
+    },
+    {
+      "path": "codex-video-captions/src/BehindText.tsx",
+      "bytes": 2425,
+      "sha256": "4bf72693db38ebaf2183f58184ae5bbc27aba4c360689cbf3eda1eb18ebfd9fa"
+    },
+    {
+      "path": "codex-video-captions/src/Film.tsx",
+      "bytes": 5471,
+      "sha256": "2115616ac8e3f2f3555f466008bbdb08f849cb02914cd490e734f087b1825940"
+    },
+    {
+      "path": "codex-video-captions/src/MotionLayer.tsx",
+      "bytes": 3314,
+      "sha256": "7d9f8c1acd33fd8e173992fc60c96d5d574b5e9c5a44b1c49417e6ddbb7e3500"
+    },
+    {
+      "path": "codex-video-captions/src/OpeningHook.tsx",
+      "bytes": 3682,
+      "sha256": "81737b038c5e0d0132d03a93d1bb954861ad09fc7f74991ebb9b5fb8c1092d59"
+    },
+    {
+      "path": "codex-video-captions/src/Scenes.tsx",
+      "bytes": 8339,
+      "sha256": "a0d1f78cfe7502bafee3f988e9c23b64e83297bbc2e62c2e602cea0061409ee3"
+    },
+    {
+      "path": "codex-video-captions/src/SemanticStage.tsx",
+      "bytes": 2299,
+      "sha256": "4b52f5399d0c485afd3989a6390c969de02d7446107eb1e82bdb45b0dc3ed2f9"
+    },
+    {
+      "path": "codex-video-captions/tests/contract.test.mjs",
+      "bytes": 2762,
+      "sha256": "d1e4fc091cdea02d3e8820ee6b7881d89e53a3792c71eda3c409dcd0953de48c"
     }
-  ],
-  "supportFiles": [
-    {
-      "path": "README.md",
-      "bytes": 3419,
-      "sha256": "6261a5d2f47346dbe881ee767baec9f2339e49774d7178f8321d85326d2b45ff"
-    },
-    {
-      "path": "INSTALL.md",
-      "bytes": 1871,
-      "sha256": "3c8b95bfe287ae7a52ef95b7d71c066d91f247c691f6745efac8ab2dea1702a3"
-    },
-    {
-      "path": "LICENSE",
-      "bytes": 1082,
-      "sha256": "7cd2ac9bf82938757414d733432876452fe551efa873a66404c7bfb7c3efc2cf"
-    },
-    {
-      "path": "install.py",
-      "bytes": 9575,
-      "sha256": "f3f9038dca42be9b2cc8202e2815d64fc7305e609efde03ae465c9563256569e"
-    },
-    {
-      "path": "test_install.py",
-      "bytes": 4203,
-      "sha256": "f2796e7e84de029ac157fde06d2dd1b3f79f5eecfd0ed3eb4b0d7675264081de"
-    }
-  ],
-  "frozenOriginZipSha256": "7e0f8aa7ad9f939bf790ede97d32d106e5eb57ff38d88cc4904aaa2400294f71"
+  ]
 }

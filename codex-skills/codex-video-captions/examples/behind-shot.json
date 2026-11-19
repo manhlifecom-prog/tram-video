@@ -1,0 +1,40 @@
+{
+  "id": "example-occlusion",
+  "sourceStart": 2,
+  "sourceEndExclusive": 4,
+  "fps": 30,
+  "frameCount": 60,
+  "sourceClip": "matte/example/source-clock.mp4",
+  "sourceClipSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "alphaDirectory": "matte/example/alpha",
+  "alphaManifest": "matte/example/manifest.json",
+  "alphaManifestSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "motionStart": 2.5,
+  "readableIntro": 0.45,
+  "moveDuration": 0.6,
+  "handoffStart": 0.65,
+  "handoffDuration": 0.2,
+  "frontY": 1350,
+  "behindY": 860,
+  "maxCommonScale": 1,
+  "transformOrigin": "50% 12%",
+  "words": [
+    {
+      "text": "START",
+      "at": 2.5,
+      "frontX": 110,
+      "behindX": 110,
+      "size": 118,
+      "italic": true
+    },
+    {
+      "text": "HERE",
+      "at": 2.7,
+      "frontX": 530,
+      "behindX": 650,
+      "size": 118,
+      "italic": true
+    }
+  ],
+  "note": "Synthetic recipe; source/CFR/alpha are absent and must come from your own approved footage"
+}

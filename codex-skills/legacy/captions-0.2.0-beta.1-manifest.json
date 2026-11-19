@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "version": "0.2.0-beta.1",
+  "skill": "codex-video-captions",
+  "compatibilitySkill": "tram-video-studio",
+  "status": "public-beta-for-testing-not-sale-ready",
+  "files": [
+    {
+      "path": "codex-video-captions/LICENSE",
+      "bytes": 1082,
+      "sha256": "7cd2ac9bf82938757414d733432876452fe551efa873a66404c7bfb7c3efc2cf"
+    },
+    {
+      "path": "codex-video-captions/LICENSE-NOTICE.md",
+      "bytes": 1393,
+      "sha256": "f45f1cc26ff4a3f2d69f93ebb269f9b9205e1a9fd1f41b61e2c04de5aedf8d0c"
+    },
+    {
+      "path": "codex-video-captions/MANIFEST.json",
+      "bytes": 9223,
+      "sha256": "f22ec6854946b23949cd986a50d873b2301e2a3ff363e9915bde74628fb95d9e"
+    },
+    {
+      "path": "codex-video-captions/PROVENANCE.json",
+      "bytes": 3068,
+      "sha256": "da42a29e1946f3f06063aa6af846c1f1b6ec7bb09c9142c3455e6772a622f11a"
+    },
+    {
+      "path": "codex-video-captions/QUICKSTART.md",
+      "bytes": 4228,
+      "sha256": "05a043dda4aa5e184ddfd6ea025b619ee80afa8ceb262c33653154c70bbe2b13"
+    },
+    {
+      "path": "codex-video-captions/README.md",
+      "bytes": 4376,
+      "sha256": "f54cbad22a3d6cc5cab9b733f8af815e5ee6439e8570cb69b23ccfd47588c976"
+    },
+    {
+      "path": "codex-video-captions/SKILL.md",
+      "bytes": 5715,
+      "sha256": "19e16d3e4bdc1da4589162da0cf08b57839e8af8aa2d61e27c3fcf7cd8ba9b99"
+    },
+    {
+      "path": "codex-video-captions/assets/EmotionalCaption.tsx",
+      "bytes": 10516,
+      "sha256": "d4d06cbc9cfff6917a6bb131e01079dbb04b63cf4fcaa778efaabd0079fa0ed3"
+    },
+    {
+      "path": "codex-video-captions/assets/EmotionalCaptionProfiled.tsx",
+      "bytes": 11345,
+      "sha256": "69175a4564fbbc5a8442bf9438713b4d48935d83b14f2358c36c61b6149e44ec"
+    },
+    {
+      "path": "codex-video-captions/examples/demo-v1.json",
+      "bytes": 1656,
+      "sha256": "0c0762ac3cf6cf033b1ec555487814e3973866792b62e7751ee62d6ec0934998"
+    },
+    {
+      "path": "codex-video-captions/examples/demo-v2.json",
+      "bytes": 1689,
+      "sha256": "94089fb93edf7155ca6d693e5ce35fb81a35560c04575188a5ced7d5d3998bf1"
+    },
+    {
+      "path": "codex-video-captions/examples/feedback-v2.json",
+      "bytes": 387,
+      "sha256": "19e9d87a2f20fab45baf5f7dddd208e061c2f9e27969c21dba62b631b3ba98be"
+    },
+    {
+      "path": "codex-video-captions/examples/input-brief.json",
+      "bytes": 1315,
+      "sha256": "ed77f91f8ab2f4fdfe4386c506232219691a0028a40f3dff417ff362b5f28232"
+    },
+    {
+      "path": "codex-video-captions/examples/profile-a-new-input.json",
+      "bytes": 1711,
+      "sha256": "b821b69d57d6183dc351634669df1113f0d6ea7a53976ea4aeb9b8fb1e891096"
+    },
+    {
+      "path": "codex-video-captions/examples/profile-a-same-input.json",
+      "bytes": 1680,
+      "sha256": "296d62c0ee28070143f2147be8e589edccfa570020d1ff7070652738c3eecbe2"
+    },
+    {
+      "path": "codex-video-captions/examples/profile-b-same-input.json",
+      "bytes": 1680,
+      "sha256": "addf5002ca3cc1c717c4f29afd399434877627d3de4bc72588f617412ec09548"
+    },
+    {
+      "path": "codex-video-captions/package.json",
+      "bytes": 680,
+      "sha256": "a90ee462d7ab850979ecd3f9024fea46b238fe9415ca70f6e11b8929c316a7ba"
+    },
+    {
+      "path": "codex-video-captions/profiles/demo-a.json",
+      "bytes": 1202,
+      "sha256": "722a261a405910b8f439d4c74efc8daf733bf86bce878c7ba8482c8126fd8b08"
+    },
+    {
+      "path": "codex-video-captions/profiles/demo-b.json",
+      "bytes": 1210,
+      "sha256": "57f91f8bcc2afe8a6f49aeeddd2c489b6c7a69ea1a611e4782765cd75e8b063b"
+    },
+    {
+      "path": "codex-video-captions/proof/DNA-CHECK.json",
+      "bytes": 562,
+      "sha256": "8d193a5a2ae7bbec4c8a7272ac7a7255927f715e1a7544dd0fa78d9c10200024"
+    },
+    {
+      "path": "codex-video-captions/proof/PROOF-REPORT.md",
+      "bytes": 3567,
+      "sha256": "05de0d662e14ca6faa8e01c020594839f12a5c01ff7f14fbffb54a5e9bec2b0e"
+    },
+    {
+      "path": "codex-video-captions/proof/decode-checks.json",
+      "bytes": 451,
+      "sha256": "fb415d897f4d8292dcf6d75b7895900d37a55e8595707845d9ecef5d9987a2f6"
+    },
+    {
+      "path": "codex-video-captions/proof/demo-v1.mp4",
+      "bytes": 454615,
+      "sha256": "ecd51dc0ae8a05b1b39919eed3e1be70a20be3a7a4e72843fb99eca9fc9a68a5"
+    },
+    {
+      "path": "codex-video-captions/proof/demo-v1.png",
+      "bytes": 420425,
+      "sha256": "4a29d0c6dcb84fdfe3200d2a5bd7fea9727449dbe93881ffd5b6a7aade73e24a"
+    },
+    {
+      "path": "codex-video-captions/proof/demo-v1.receipt.json",
+      "bytes": 894,
+      "sha256": "f51f90e83b3fb9cbca166359d5b07290f801eaaf3091d12d067a098752643ea2"
+    },
+    {
+      "path": "codex-video-captions/proof/demo-v2.mp4",
+      "bytes": 448822,
+      "sha256": "89bd29bf3ff9ace8ed2336f46d2b59e6c3ff464ee855fc6848158a6dda98b7d1"
+    },
+    {
+      "path": "codex-video-captions/proof/demo-v2.png",
+      "bytes": 420612,
+      "sha256": "2736a88c5e802bb439ce3296b0639b93813396245cb901b0f85276df39cb791c"
+    },
+    {
+      "path": "codex-video-captions/proof/demo-v2.receipt.json",
+      "bytes": 894,
+      "sha256": "aabf5081ecbb2d6952ea0e74ee2e3c20cd5e82fb7e0f37bc11abcc5b4917569d"
+    },
+    {
+      "path": "codex-video-captions/proof/package-checks.json",
+      "bytes": 353,
+      "sha256": "2740bf25128221ffd58aee40e64f33438650559eba21299c76c68fe619ed1a58"
+    },
+    {
+      "path": "codex-video-captions/proof/profile-a-new-input.mp4",
+      "bytes": 449364,
+      "sha256": "530cb14887523d1ebc88d01b5ea23bac42d38be97cdd8d0c37afef36d08c57d8"
+    },
+    {
+      "path": "codex-video-captions/proof/profile-a-new-input.png",
+      "bytes": 417749,
+      "sha256": "9622ae85571d8cc1c93ceaf71c73db44df11def995d9051cf45045c86814b0e6"
+    },
+    {
+      "path": "codex-video-captions/proof/profile-a-new-input.receipt.json",
+      "bytes": 1016,
+      "sha256": "335ccabb639784cecfea708b504b1d95c31dc0710083ced827a2d296d21aa7c4"
+    },
+    {
+      "path": "codex-video-captions/proof/profile-a-same-input.mp4",
+      "bytes": 453497,
+      "sha256": "420d15b9423ac4b06cce0949596f04531bf2ba83c7bbd1dd5acbca150ff47a1f"
+    },
+    {
+      "path": "codex-video-captions/proof/profile-a-same-input.png",
+      "bytes": 419535,
+      "sha256": "f9d51ca01127801496d1b3221fd02dd64e21b13a1e992464c783ee51d0fb242f"
+    },
+    {
+      "path": "codex-video-captions/proof/profile-a-same-input.receipt.json",
+      "bytes": 1018,
+      "sha256": "a4e6b815e91b575b3b21af351200055983b0b1af09768d2130cb87c495808919"
+    },
+    {
+      "path": "codex-video-captions/proof/profile-b-same-input.mp4",
+      "bytes": 439987,
+      "sha256": "621f8b2510668da7f8d5a6e51a24f12ac483ea902a84a314f4cb331a9f382622"
+    },
+    {
+      "path": "codex-video-captions/proof/profile-b-same-input.png",
+      "bytes": 361458,
+      "sha256": "50976f24793d2d875cfe40ba6df9d9346476555ac41f54399e0ca7110466e29f"
+    },
+    {
+      "path": "codex-video-captions/proof/profile-b-same-input.receipt.json",
+      "bytes": 1018,
+      "sha256": "102176ba2af77c5d6a8382a801550be1f37d886fd45661a3fbdf041e6c367299"
+    },
+    {
+      "path": "codex-video-captions/proof/validator-tests.log",
+      "bytes": 979,
+      "sha256": "a56cf349ed50646842ceaeecfd241e81a63ae098ab70516599221c0812d59111"
+    },
+    {
+      "path": "codex-video-captions/public/fonts/BeVietnamPro-Bold.ttf",
+      "bytes": 140300,
+      "sha256": "7f738fe5c43c8872807b20e2d30d42163618de8a4daf7f48a939adac32c16847"
+    },
+    {
+      "path": "codex-video-captions/public/fonts/BeVietnamPro-ExtraBoldItalic.ttf",
+      "bytes": 138076,
+      "sha256": "b5544a50b74c3153f7aa68614cfaebbea924869e6d6fdfd4ec80decfdd7ff4cd"
+    },
+    {
+      "path": "codex-video-captions/public/fonts/BeVietnamPro-Medium.ttf",
+      "bytes": 135980,
+      "sha256": "b60832bfa0fcd015158112c64d7e3fdad3b0c6287d1823f85a3103636e845268"
+    },
+    {
+      "path": "codex-video-captions/public/fonts/OFL.txt",
+      "bytes": 4397,
+      "sha256": "6b7f8f73609a25ea78c891e34cf37b06f8a676b7ea986e941e43b009110f2a85"
+    },
+    {
+      "path": "codex-video-captions/references/PROFILE-GUIDE.md",
+      "bytes": 3087,
+      "sha256": "d30334a7a9f7f8a6c1e874d108410dd300eab449e5802657de07fb1ee12a9684"
+    },
+    {
+      "path": "codex-video-captions/references/emotional-typography.md",
+      "bytes": 1957,
+      "sha256": "1625593bcce8b6bab557267974a438cae703c90b969e4650d9dc21ccf963e5fb"
+    },
+    {
+      "path": "codex-video-captions/references/subtitle-formula.md",
+      "bytes": 3486,
+      "sha256": "8684606a8f314e6f49db2a7e7a2d8dcea6c616d1d2a96476cd5b703c16f72b7a"
+    },
+    {
+      "path": "codex-video-captions/renderer/index.tsx",
+      "bytes": 4084,
+      "sha256": "d692de46a082019f5cd25d0debba789c67aaf670d0bcb97c37c283153b9bc62b"
+    },
+    {
+      "path": "codex-video-captions/schemas/input-brief.schema.json",
+      "bytes": 2376,
+      "sha256": "f156c0f55a42a9a401fb9bd6e34419cd34399717d7ddfd6ca572ab6ff2696586"
+    },
+    {
+      "path": "codex-video-captions/schemas/profile.schema.json",
+      "bytes": 2828,
+      "sha256": "6616ec184d1376572c965e7f15d5156cb1b058ab803b615fa7e663c337bfcb3f"
+    },
+    {
+      "path": "codex-video-captions/schemas/render-input.schema.json",
+      "bytes": 4594,
+      "sha256": "f51b0c948b2ca22d9d23c31ba98f05dfb90e05748db730d6c6d509b0eaef060c"
+    },
+    {
+      "path": "codex-video-captions/scripts/cache-identity.mjs",
+      "bytes": 1137,
+      "sha256": "e2f667206568127be5ccf04051d7d24cd32da7f5dd46a9a132b7aeb5eb6fa00e"
+    },
+    {
+      "path": "codex-video-captions/scripts/cache-identity.test.mjs",
+      "bytes": 1881,
+      "sha256": "475093cb738c1a7fe45d010d7b20ff8e7983ebc78d8d9df02acf26b3009679fb"
+    },
+    {
+      "path": "codex-video-captions/scripts/check-input.mjs",
+      "bytes": 7702,
+      "sha256": "734c8bc9954a22f4d1499cd67c686185fc84f48fd49011cc132508c4d7829a20"
+    },
+    {
+      "path": "codex-video-captions/scripts/check-input.test.mjs",
+      "bytes": 3553,
+      "sha256": "2ea3ffd9d359272b78d4e9fb2797332539e9da8e7302a24f136467794c92532d"
+    },
+    {
+      "path": "codex-video-captions/scripts/render.mjs",
+      "bytes": 4409,
+      "sha256": "0ec537ea8d2d2ee44b561f685584f471cf7f7a663dda67776b4dd553c186dcdf"
+    },
+    {
+      "path": "codex-video-captions/tsconfig.json",
+      "bytes": 378,
+      "sha256": "258bd8ab837c61132c3e9a4d892e6e89545ec8c6c043f7ab76a368118e8192bb"
+    },
+    {
+      "path": "tram-video-studio/SKILL.md",
+      "bytes": 1374,
+      "sha256": "69dacf35c2db4fb94c2e04b618de893afb086497c709d3285a28eaed101723c9"
+    }
+  ],
+  "supportFiles": [
+    {
+      "path": "README.md",
+      "bytes": 3419,
+      "sha256": "6261a5d2f47346dbe881ee767baec9f2339e49774d7178f8321d85326d2b45ff"
+    },
+    {
+      "path": "INSTALL.md",
+      "bytes": 1871,
+      "sha256": "3c8b95bfe287ae7a52ef95b7d71c066d91f247c691f6745efac8ab2dea1702a3"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1082,
+      "sha256": "7cd2ac9bf82938757414d733432876452fe551efa873a66404c7bfb7c3efc2cf"
+    },
+    {
+      "path": "install.py",
+      "bytes": 9575,
+      "sha256": "f3f9038dca42be9b2cc8202e2815d64fc7305e609efde03ae465c9563256569e"
+    },
+    {
+      "path": "test_install.py",
+      "bytes": 4203,
+      "sha256": "f2796e7e84de029ac157fde06d2dd1b3f79f5eecfd0ed3eb4b0d7675264081de"
+    }
+  ],
+  "frozenOriginZipSha256": "7e0f8aa7ad9f939bf790ede97d32d106e5eb57ff38d88cc4904aaa2400294f71"
+}

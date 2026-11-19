@@ -1,0 +1,53 @@
+{
+  "note": "Synthetic configuration only. Supply your real source/EDL/voice envelope; no media included. Positions and labels must be reviewed against customer footage.",
+  "phoneMotion": {
+    "sourceStart": 0,
+    "initiate": 0.7,
+    "ring": 1.8,
+    "connect": 2.8,
+    "reply": 5.2,
+    "exit": 6.6,
+    "sourceEnd": 7.2,
+    "frame": {
+      "left": 630,
+      "top": 1100,
+      "width": 370,
+      "height": 650
+    },
+    "appLabel": "A FAMILIAR CALL",
+    "contactLabel": "Someone you know",
+    "connectingLabel": "Connecting",
+    "conversationLabel": "In conversation",
+    "idleLabel": "Ready",
+    "voiceReferenceSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "phonePalette": {
+    "active": "#F6F4F2",
+    "buttonBorder": "#666666",
+    "buttonEdge": "#666666",
+    "buttonInk": "#666666",
+    "buttonShadow": "#666666",
+    "buttonSurface": "#666666",
+    "endButton": "#666666",
+    "frameDark": "#666666",
+    "frameEdge": "#666666",
+    "frameLight": "#F6F4F2",
+    "frameMid": "#666666",
+    "frameSide": "#666666",
+    "glassLight": "#666666",
+    "glow": "#666666",
+    "inactive": "#666666",
+    "notch": "#666666",
+    "reply": "#666666",
+    "replyInk": "#666666",
+    "replyShadow": "#666666",
+    "ring": "#666666",
+    "screenBorder": "#666666",
+    "screenLight": "#F6F4F2",
+    "screenMid": "#666666",
+    "shadow": "#666666",
+    "text": "#F6F4F2"
+  },
+  "phoneVoiceEnvelopeFile": "data/voice-envelope.json",
+  "phoneVoiceEnvelopeSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+}

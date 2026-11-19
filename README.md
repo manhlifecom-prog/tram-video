@@ -1,10 +1,10 @@
 # Trạm Video — open source
 
-**Skill Codex mới để bạn bè thử:0.2.0-beta.1.** Đọc [câu nhắn chỉ cần dán vào Codex](FOR-CODEX.md), hoặc [hướng dẫn cài](codex-skills/README.md). [Tải ZIP mới](https://raw.githubusercontent.com/manhlifecom-prog/tram-video/ad7232e6cdd76bcb652ef4272813b5e696027083/downloads/codex-video-captions-0.2.0-beta.1.zip). Tên gọi chính `$codex-video-captions`; tên cũ `$tram-video-studio` chuyển tới cùng bản mới. Đây là beta phạm vi phụ đề/người nói, không phải sản phẩm đã nghiệm thu để bán.
+**Skill hiện tại: codex-video-captions0.3.0-beta.1.** [Hai câu nhắn cài/dùng trong Codex](FOR-CODEX.md), [hướng dẫn](codex-skills/README.md), [ZIP mới](downloads/codex-video-captions-0.3.0-beta.1.zip). Một entry `$codex-video-captions`: sub theo nghĩa/gu, word motion chọn lọc, hook/cảnh, phone/matte có điều kiện, optional offline ASR và audio QA. Không chứa dữ liệu khách hoặc Trạm SaaS.
 
-Phần dưới giữ hướng dẫn renderer OSS legacy; dùng link trên nếu bạn muốn cài skill hiện tại.
+Đây là beta dùng cục bộ, không bảo đảm mọi máy/format hoặc chất lượng tự động từ một lệnh. Read capability/setup; thiếu phải báo rõ, không fallback starter yếu. Code MIT; font/dependency có điều khoản riêng.
 
-Biến video nói chuyện và transcript tiếng Việt thành video dọc có phụ đề và minh họa chuyển động theo từng đoạn lời. Tách từ phần dựng hình của Trạm Video do Mạnh phát triển; bản cộng đồng đầu tiên, chưa có số liệu người dùng công khai.
+Phần dưới giữ renderer OSS **legacy**, không phải lệnh chạy skill hiện tại.
 
 ## Chạy nhanh
 
@@ -57,10 +57,9 @@ Mã do dự án cung cấp: MIT, xem [LICENSE](LICENSE). Font Be Vietnam Pro: SI
 Xem [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) và [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Hướng phát triển: tích hợp ASR local tùy chọn, thêm minh họa đúng nghĩa, hỗ trợ video ngang và tài liệu dễ cài hơn.
 
 
-## Skill Codex dùng trên máy khác
 
-Bản hiện tại: [codex-video-captions0.2.0-beta.1](codex-skills/README.md). [Câu nhắn tải/cài tự động trong Codex](FOR-CODEX.md) ghim commit và SHA256. Bộ cài cập nhật router tên cũ, backup managed files và giữ riêng dữ liệu/DNA của bạn.
+## Skill hiện tại và lịch sử
 
-[ZIP tram-video-studio2026.11.12](downloads/tram-video-studio-20261112.zip) là bản legacy để khôi phục, không phải bản cài mặc định. Toàn bộ lịch sử, code và assets legacy vẫn được giữ.
+Dùng [FOR-CODEX.md](FOR-CODEX.md) để tải đúng bản0.3.0-beta.1 ghim commit/SHA256. Installer managed giữ dữ liệu/DNA và backup ngoài skills discovery; cài đặt chưa phải workflow dựng video.
 
-Bản skill ghim để thử: commit `ad7232e6cdd76bcb652ef4272813b5e696027083`. ZIP SHA256: `9616b3187c5a7c81a748159639aed9a154235f6c6a6cb7737ae3988e72fcc913`. Câu nhắn trong [FOR-CODEX.md](FOR-CODEX.md) kiểm hash trước cài, giữ backup và workspace riêng.
+Bản0.2.0-beta.1 giữ trong [legacy](codex-skills/legacy/codex-video-captions-0.2.0-beta.1/) và [ZIP cũ](downloads/codex-video-captions-0.2.0-beta.1.zip); ZIP20261112/lịch sử/source legacy vẫn nguyên. Không dùng link cài cũ làm mặc định.

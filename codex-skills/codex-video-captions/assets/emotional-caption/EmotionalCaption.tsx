@@ -23,7 +23,7 @@ function Key({text,age,mode,size=76}:{text:string;age:number;mode:string;size?:n
  if(mode==='tension'){x=Math.sin(h*38)*Math.exp(-h*5)*4;scale+=.055*Math.sin(h*15)*Math.exp(-h*5)}
  if(mode==='curious'){rotate=Math.sin(h*16)*Math.exp(-h*4.5)*5}
  const calm=mode==='calm';
- return <span style={{display:'inline-block',position:'relative',margin:'0 3px',color:calm?'var(--caption-soft)':'var(--caption-accent)',fontWeight:850,fontStyle:'italic',fontSize:size,lineHeight:1.13,opacity:show,transform:`translate(${x}px,${y}px) scale(${scale}) rotate(${rotate}deg)`,transformOrigin:'50% 75%',textShadow:calm?`0 0 ${8+3*Math.sin(h*2)}px var(--caption-glow),0 3px 12px var(--caption-shadow)`:'0 3px 12px var(--caption-shadow)'}}>
+ return <span style={{display:'inline-block',position:'relative',margin:'0 3px',color:calm?'var(--caption-soft)':'var(--caption-accent)',fontWeight:850,fontStyle:'italic',fontSize:size,lineHeight:1.13,opacity:show,transform:`translate(${x}px,${y}px) scale(${scale}) rotate(${rotate}deg)`,transformOrigin:'50% 75%',WebkitTextStroke:'0px',textShadow:'0 3px 13px rgba(8,16,24,0.32)'}}>
  {text}
  {(mode==='shine'||mode==='curious')&&h<.72&&<span aria-hidden style={{position:'absolute',inset:0,color:'#fff',clipPath:`polygon(${-35+h*230}% 0,${-15+h*230}% 0,${-36+h*230}% 100%,${-56+h*230}% 100%)`,filter:'drop-shadow(0 0 5px var(--caption-glow))'}}>{text}</span>}
  {mode==='burst'&&<Burst age={h-.08}/>}
@@ -32,7 +32,7 @@ function Key({text,age,mode,size=76}:{text:string;age:number;mode:string;size?:n
 function WordCaption({cue,t,top,choice}:{cue:Cue;t:number;top:number;choice:TextChoice}){
  const age=t-cue.start,words=cue.text.split(/\s+/),key=cue.key??'',keyStart=key?cue.text.indexOf(key):-1,keyEnd=keyStart+key.length;
  let cursor=0;const items=words.map(word=>{const start=cursor;cursor+=word.length+1;return {word,marked:keyStart>=0&&start<keyEnd&&start+word.length>keyStart}});
- const lastMarked=items.reduce((last,w,i)=>w.marked?i:last,-1),body=choice.bodySize??57,keySize=choice.keySize??75;
+ const lastMarked=items.reduce((last,w,i)=>w.marked?i:last,-1),body=choice.bodySize??64,keySize=choice.keySize??75;
  if(!choice.wordOnsets||choice.wordOnsets.length!==words.length)throw Error('Actual source-word onsets required; no heuristic fallback');
  const alpha=age<-1e-7?0:1;
  let index=0;const groups=(choice.lines??[cue.text]).map(line=>line.split(/\s+/).map(()=>index++));
@@ -47,17 +47,17 @@ function WordCaption({cue,t,top,choice}:{cue:Cue;t:number;top:number;choice:Text
  return <span key={i} style={{display:'inline-block',position:'relative',marginRight:marked?Math.max(12,keySize*.16):12,opacity:hit<-1e-7?0:1,fontSize:marked?keySize:body,fontWeight:marked?850:600,fontStyle:marked?'italic':undefined,color:marked?(choice.mode==='word-soft'?'var(--caption-soft)':'var(--caption-accent)'):'#fff',transform:`translate(${x}px,${y}px) scale(${scale}) rotate(${rotate}deg)`,transformOrigin:'50% 75%'}}>
  {word}{choice.mode==='word-shine'&&marked&&h<.72&&hit>=0&&<span aria-hidden style={{position:'absolute',inset:0,color:'#fff',clipPath:`polygon(${-35+h*230}% 0,${-15+h*230}% 0,${-36+h*230}% 100%,${-56+h*230}% 100%)`,filter:'drop-shadow(0 0 5px var(--caption-glow))'}}>{word}</span>}{choice.mode==='word-spark'&&marked&&i===lastMarked&&<Burst age={h-.05}/>}
  </span>};
- return <div style={{position:'absolute',left:choice.left??88,right:choice.right??88,top:top-4,textAlign:'center',fontSize:body,fontWeight:600,lineHeight:1.25,color:'white',opacity:alpha,textShadow:'0 3px 12px var(--caption-shadow),0 1px 4px var(--caption-shadow)'}}>
+ return <div style={{position:'absolute',left:choice.left??88,right:choice.right??88,top:top-4,textAlign:'center',fontSize:body,fontWeight:600,lineHeight:1.25,color:'white',opacity:alpha,WebkitTextStroke:'0px',textShadow:'0 3px 13px rgba(8,16,24,0.32)'}}>
  {groups.map((group,lineIndex)=><div key={lineIndex} style={{whiteSpace:'nowrap',marginTop:lineIndex?10:0}}>{group.map(renderWord)}{lineIndex===groups.length-1&&choice.icon&&<Emotion kind={choice.icon} age={age-(choice.wordOnsets?.[lastMarked]??.8)}/>}</div>)}
  </div>
 }
 
 function TimedPhraseCaption({cue,t,top,choice}:{cue:Cue;t:number;top:number;choice:TextChoice}){
- const age=t-cue.start,key=cue.key??'',keyStart=key?cue.text.indexOf(key):-1,keyEnd=keyStart+key.length,body=choice.bodySize??52;
+ const age=t-cue.start,key=cue.key??'',keyStart=key?cue.text.indexOf(key):-1,keyEnd=keyStart+key.length,body=choice.bodySize??64;
  let char=0,index=0;const items=cue.text.split(/\s+/).map(word=>{const start=char;char+=word.length+1;return {word,at:choice.tokenOnsets?.[index++]??0,marked:keyStart>=0&&start<keyEnd&&start+word.length>keyStart}});
  let token=0;const lines=(choice.lines??[cue.text]).map(line=>{const groups:{text:string;at:number;marked:boolean}[]=[];for(const _word of line.split(/\s+/)){const item=items[token++],last=groups.at(-1);if(last&&last.marked===item.marked&&Math.abs(last.at-item.at)<.001)last.text+=' '+item.word;else groups.push({text:item.word,at:item.at,marked:item.marked})}return groups});
  const keyOnset=Math.max(0,...items.filter(x=>x.marked).map(x=>x.at));
- return <div style={{position:'absolute',left:88,right:88,top:top-6,textAlign:'center',opacity:e((cue.end-t)/.12),fontSize:body,fontWeight:600,lineHeight:1.25,color:'#fff',letterSpacing:-.4,textShadow:'0 3px 12px var(--caption-shadow),0 1px 4px var(--caption-shadow)'}}>
+ return <div style={{position:'absolute',left:88,right:88,top:top-6,textAlign:'center',opacity:e((cue.end-t)/.12),fontSize:body,fontWeight:600,lineHeight:1.25,color:'#fff',letterSpacing:-.4,WebkitTextStroke:'0px',textShadow:'0 3px 13px rgba(8,16,24,0.32)'}}>
  {lines.map((groups,i)=><div key={i} style={{whiteSpace:'nowrap',marginTop:i?9:0}}>{groups.map((g,j)=><React.Fragment key={j}>{g.marked?<Key text={g.text} age={age-g.at} mode={choice.mode} size={choice.keySize??78}/>:<span style={{opacity:e((age-g.at)/.10)}}>{g.text}</span>}{j<groups.length-1?' ':null}</React.Fragment>)}{groups.some(x=>x.marked)&&choice.icon&&<Emotion kind={choice.icon} age={age-keyOnset}/>}</div>)}
  </div>
 }
@@ -67,16 +67,16 @@ export function EmotionalCaption({cue,t,top,choice}:{cue:Cue;t:number;top:number
  if(choice?.mode.startsWith('word-'))return <WordCaption cue={cue} t={t} top={top} choice={choice}/>;
  if(choice?.main){
   const lines=choice.main.split('\n');
-  return <div style={{position:'absolute',left:88,right:88,top:top-35,textAlign:'center',opacity,color:'white',textShadow:'0 3px 14px var(--caption-shadow)',lineHeight:1.15}}>
-   {choice.lead&&<div style={{fontSize:39,fontWeight:500,opacity:e((a-(choice.leadOnset??0))/.12),marginBottom:12}}>{choice.lead}</div>}
+  return <div style={{position:'absolute',left:88,right:88,top:top-35,textAlign:'center',opacity,color:'white',WebkitTextStroke:'0px',textShadow:'0 3px 13px rgba(8,16,24,0.32)',lineHeight:1.15}}>
+   {choice.lead&&<div style={{fontSize:64,fontWeight:500,opacity:e((a-(choice.leadOnset??0))/.12),marginBottom:12}}>{choice.lead}</div>}
    {lines.map((line,i)=>{const onset=choice.mainOnsets?.[i]??i*.17,q=e((a-onset)/.12),h=Math.max(0,a-onset);return <div key={line} style={{fontSize:lines.length>1?(i===lines.length-1?96:64):90,fontWeight:i===lines.length-1?800:600,fontStyle:i===lines.length-1?'italic':undefined,marginBottom:8,opacity:q,transform:`translateY(${24*(1-q)-(mode==='spring'?Math.sin(h*18)*Math.exp(-h*6)*11:0)}px)`}}>{line}</div>})}
-   {choice.tail&&<div style={{fontSize:43,marginTop:13,opacity:e((a-(choice.tailOnset??.3))/.12)}}>{choice.tail}</div>}
+   {choice.tail&&<div style={{fontSize:64,marginTop:13,opacity:e((a-(choice.tailOnset??.3))/.12)}}>{choice.tail}</div>}
   </div>
  }
  if(choice?.tokenOnsets)return <TimedPhraseCaption cue={cue} t={t} top={top} choice={choice}/>;
  if(choice?.lines){
-  const key=cue.key??'',keyLine=key?choice.lines.findIndex(line=>line.includes(key)):-1,body=choice.bodySize??52;let chunkIndex=0;
-  return <div style={{position:'absolute',left:88,right:88,top:top-6,textAlign:'center',opacity,color:'#fff',fontSize:body,fontWeight:600,lineHeight:1.25,letterSpacing:-.4,textShadow:'0 3px 12px var(--caption-shadow),0 1px 4px var(--caption-shadow)'}}>
+  const key=cue.key??'',keyLine=key?choice.lines.findIndex(line=>line.includes(key)):-1,body=choice.bodySize??64;let chunkIndex=0;
+  return <div style={{position:'absolute',left:88,right:88,top:top-6,textAlign:'center',opacity,color:'#fff',fontSize:body,fontWeight:600,lineHeight:1.25,letterSpacing:-.4,WebkitTextStroke:'0px',textShadow:'0 3px 13px rgba(8,16,24,0.32)'}}>
    {choice.lines.map((line,i)=>{const k=key?line.indexOf(key):-1;
     if(k>=0){const tail=line.slice(k+key.length),punct=tail.match(/^[,.;:!?]+/)?.[0]??'';return <div key={i} style={{whiteSpace:'nowrap',marginTop:i?9:0}}><span style={{opacity:e(a/.14)}}>{line.slice(0,k)}</span><Key text={key+punct} age={a-Math.min(.28,d*.21)} mode={mode} size={choice.keySize??78}/><span style={{opacity:e((a-Math.min(.43,d*.32))/.14)}}>{tail.slice(punct.length)}</span>{choice.icon&&<Emotion kind={choice.icon} age={a-Math.min(.28,d*.21)}/>}</div>}
     const parts=line.match(/(?:\S+\s*){1,3}/g)??[line];return <div key={i} style={{whiteSpace:'nowrap',marginTop:i?9:0}}>{parts.map((part,j)=>{const onset=keyLine>=0?(i>keyLine?Math.min(.43,d*.32):chunkIndex++*Math.min(.12,d/12)):chunkIndex++*Math.min(.16,d/12);return <span key={j} style={{opacity:e((a-onset)/.14)}}>{part}</span>})}</div>
@@ -85,7 +85,7 @@ export function EmotionalCaption({cue,t,top,choice}:{cue:Cue;t:number;top:number
  }
  const key=cue.key,at=key?cue.text.indexOf(key):-1,marked=at>=0&&!!key,tail=marked?cue.text.slice(at+key!.length):'',punct=tail.match(/^[,.;:!?]+/)?.[0]??'';
  const parts=marked?[cue.text.slice(0,at),key!+punct,tail.slice(punct.length)]:(cue.text.match(/(?:\S+\s*){1,3}/g)??[cue.text]);
- return <div style={{position:'absolute',left:88,right:88,top:top-6,textAlign:'center',opacity,color:'#fff',fontSize:58,fontWeight:700,lineHeight:1.24,letterSpacing:-.6,textShadow:'0 3px 12px var(--caption-shadow),0 1px 4px var(--caption-shadow)',textWrap:'balance'}}>
+ return <div style={{position:'absolute',left:88,right:88,top:top-6,textAlign:'center',opacity,color:'#fff',fontSize:64,fontWeight:700,lineHeight:1.24,letterSpacing:-.6,WebkitTextStroke:'0px',textShadow:'0 3px 13px rgba(8,16,24,0.32)',textWrap:'balance'}}>
  {parts.map((part,i)=>{const emphasized=marked&&i===1;const onset=marked?(emphasized?Math.min(.28,d*.21):i===2?Math.min(.43,d*.32):0):i*Math.min(.16,d/(parts.length+1));return emphasized?<React.Fragment key={i}><Key text={part} age={a-onset} mode={mode}/>{choice?.icon&&<Emotion kind={choice.icon} age={a-onset}/>}</React.Fragment>:<span key={i} style={{opacity:e((a-onset)/.14)}}>{part}</span>})}
  </div>
 }

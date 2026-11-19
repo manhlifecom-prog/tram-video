@@ -5,13 +5,15 @@ description: In Codex, start full video editing when the user sends only a Googl
 
 # One video workflow
 
-Version 0.3.0-beta.4. Sending a Drive video or folder URL by itself in Codex is a request to edit and deliver the video, unless the conversation clearly asks for another action. No special command, skill mention, repeated brief or quality prompt is needed. Start work in the same turn.
+Version 0.3.0-beta.5. Sending a Drive video or folder URL by itself in Codex is a request to edit and deliver the video, unless the conversation clearly asks for another action. No special command, skill mention, repeated brief or quality prompt is needed. Start work in the same turn.
 
 1. Check the [release channel](https://raw.githubusercontent.com/manhlifecom-prog/tram-video/main/codex-skills/latest.json) before starting each new job. Read [link intake and upgrades](references/link-intake.md) for the exact input and update rules. Reuse any active job for the same request.
 2. Resolve and probe the source, infer a brief from the current person's preferences and the video, and carry out [the full workflow](references/WORKFLOW.md) through an MP4. Ask only about a concrete access blocker or a choice that changes the output. Defaults do not need approval.
 3. Default to **maximum purposeful production** until the user asks to reduce effects. Cover the whole retained narration with a deliberate mix of hook, framing and cuts, animated illustration, selected B-roll, expressive type and sound. Use the best available capabilities. Protect reading rhythm and clarity. Never silently substitute a caption-only starter.
 
 **Design a distinct edit for each new video, even with a link-only brief.** Read the actual narration and footage, then make a private, job-specific editing DNA before authoring cues or scenes. Follow [per-video editing DNA](references/video-dna.md). Keep the user's visual identity and the approved subtitle craft. Choose this video's typography, timing of visual entrances, layout, motion and imagery from its story. Reuse a technique when it fits; do not reuse a previous video's full visual treatment.
+
+**Clean, readable type is a delivery requirement.** Use the [caption craft and review rules](references/caption-craft.md) and the bundled meaning-led caption renderer. Use open, clean glyphs with no hard outline, stroke or black halo. Protect readability through placement and a soft local gradient. Use at least 60 px for every spoken line at 1080×1920 and prefer 64–72 px for body and lead/tail lines. Keep key phrases larger, reveal each line from its speech anchor, and use designed motion selectively. Reflow whole semantic phrases before reducing size. Never route finished captions through a generic legacy ASS template. Inspect the actual output at phone size before delivery.
 
 Use the customer's own brief, face, voice, palette, approved reference and approved music choices. Keep stable semantic phrases as the base when that is the preferred cadence; select word/key motion per meaning, never all-word/all-spring or preset rotation. Optional word motion must visibly move and settle, not just fade. Use each real source-word anchor; keep whole keys on fixed lines. Do not hide first/last words with compound fades.
 

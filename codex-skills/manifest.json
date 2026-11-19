@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "skill": "codex-video-captions",
-  "version": "0.3.0-beta.4",
+  "version": "0.3.0-beta.5",
   "status": "clean-shared-beta-not-universal-or-sale-guarantee",
   "files": [
     {
       "path": "codex-video-captions/DEPENDENCY-PINS.json",
       "bytes": 500,
-      "sha256": "3a8dec16bdf9838341f18dbf1f6445070efbda52950b75cdc7ae76bec26865cf"
+      "sha256": "f449761f63ab505f17f89642e72bdef6903517d5c4f08f1cc097f43289d0f412"
     },
     {
       "path": "codex-video-captions/LICENSE",
@@ -16,33 +16,33 @@
     },
     {
       "path": "codex-video-captions/MANIFEST.json",
-      "bytes": 8436,
-      "sha256": "c922fb208e0253400923549e67bd95aa3541903c47267c1268c98659bf64525a"
+      "bytes": 8598,
+      "sha256": "816df6077e9abea5eb11192776900322dd590e5b20218b20baf8785b8892ded2"
     },
     {
       "path": "codex-video-captions/README.md",
       "bytes": 1938,
-      "sha256": "65fe8e90a8e469af2108ef065846a8ceacd71497913a591aab808690213cbd4e"
+      "sha256": "4c34feee84819c7d31cbe51abdcc4e65b55236ff5df5ded1a62f98789a2929fc"
     },
     {
       "path": "codex-video-captions/SKILL.md",
-      "bytes": 4077,
-      "sha256": "09b3014f9297d583a6ce52985095365d9873d81f5817a76fe834916cedfbf241"
+      "bytes": 4766,
+      "sha256": "4ae6c47f86b07f68aa1beb603d523755511d52b53650202d638e8bf92e4727ac"
     },
     {
       "path": "codex-video-captions/assets/ExpressiveSubtitles.tsx",
-      "bytes": 5208,
-      "sha256": "5eaafdf94829e2605fcf7d699240f9935e456f15c957e9af89622ad78eadd210"
+      "bytes": 5158,
+      "sha256": "39e4c640fd28e0461e8aa640a7100540e58193e56264b4498e83ffa9a3ac9fa9"
     },
     {
       "path": "codex-video-captions/assets/WordFontAudit.tsx",
-      "bytes": 2030,
-      "sha256": "972e7232a862a46d4e24fa9f2911fbe42a39472b83f0a38ce6c99c5edbb9b9c2"
+      "bytes": 2052,
+      "sha256": "82f6d339c78c810eca23ee79c4989ba48b6252e3386f38a4fc7050c04ca6d7c8"
     },
     {
       "path": "codex-video-captions/assets/emotional-caption/EmotionalCaption.tsx",
-      "bytes": 11409,
-      "sha256": "aa2e34c0ed1abf2d3cb9b9f90c051f24c66a8e691e68367bea5bdc1cd81b0f9e"
+      "bytes": 11314,
+      "sha256": "01a1a9be44d153dbdb275f25a4c16a29347c304bbdd3dd968f142a8d6ce8a281"
     },
     {
       "path": "codex-video-captions/assets/phone-motion/PhoneCall.tsx",
@@ -57,7 +57,7 @@
     {
       "path": "codex-video-captions/examples/neutral-plan.json",
       "bytes": 4365,
-      "sha256": "9c301775abdba300600cb731050b0abd2427b4fa5a4cdb18634a50226e38d32d"
+      "sha256": "24cd49609b3d83ce5d8b0792f45df442a8733c54a44a9df2ff5f5f05ebe8e280"
     },
     {
       "path": "codex-video-captions/examples/opening-hook.json",
@@ -77,7 +77,7 @@
     {
       "path": "codex-video-captions/package.json",
       "bytes": 597,
-      "sha256": "a0ad204e5111a08b503ef47d970a36d935ac8430635039ff6b63af4268fb3964"
+      "sha256": "34d20ae6fdf3aa33352fad67687901e6c42adc3418873a1266056f0144a43524"
     },
     {
       "path": "codex-video-captions/project-plan.json",
@@ -126,13 +126,18 @@
     },
     {
       "path": "codex-video-captions/references/WORKFLOW.md",
-      "bytes": 4776,
-      "sha256": "bddd6f06b3608e5b1498c73afe0771bcc3e512ebad802602a5fff070f4ec97e9"
+      "bytes": 4933,
+      "sha256": "11fd1b0e337bd972dfcf55f43d23cd97b63e36a605842aa507b163e11bf948c8"
     },
     {
       "path": "codex-video-captions/references/audio-recipe.md",
       "bytes": 6458,
       "sha256": "b9f9b87de6e732e2c466092f293ec0a49190822c94724be339cbc4a492a52a62"
+    },
+    {
+      "path": "codex-video-captions/references/caption-craft.md",
+      "bytes": 2049,
+      "sha256": "4f6564d60fb071a668672735fdf3717cbac9c39475e65071422948b8a20000a9"
     },
     {
       "path": "codex-video-captions/references/link-intake.md",
@@ -142,7 +147,7 @@
     {
       "path": "codex-video-captions/references/setup-and-install.md",
       "bytes": 6427,
-      "sha256": "3a57b9c48663204a753bde9a885cbfa61e707380193e55ade5c3427edcd29167"
+      "sha256": "80df047ab26e5b8548a4fda2e29a053c378c7b4b085d3fcd06543162374f4b1c"
     },
     {
       "path": "codex-video-captions/references/video-dna.md",
@@ -181,8 +186,8 @@
     },
     {
       "path": "codex-video-captions/scripts/check-plan.mjs",
-      "bytes": 7648,
-      "sha256": "77d041743a55dc24b814748d35d1c3e93c211957955276f0ef69e1402a2ffeab"
+      "bytes": 7943,
+      "sha256": "36482b8a729f1accad30adbfcdc905f093feda77d3d276983b0e1edcbc18a64e"
     },
     {
       "path": "codex-video-captions/scripts/install.py",
@@ -256,8 +261,8 @@
     },
     {
       "path": "codex-video-captions/tests/contract.test.mjs",
-      "bytes": 2762,
-      "sha256": "d1e4fc091cdea02d3e8820ee6b7881d89e53a3792c71eda3c409dcd0953de48c"
+      "bytes": 3019,
+      "sha256": "ffc0faf59d8730ff9a6ba2a54e71c7c37fe9e341d59c439e188a80e441025781"
     }
   ]
 }

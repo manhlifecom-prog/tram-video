@@ -15,4 +15,6 @@ Nhạc nền chỉ dùng file hoặc link TikTok/Facebook do người yêu cầu
 
 Skill đọc nội dung và tự tạo ADN dựng riêng cho từng video, từ chữ, màu, bố cục đến animation và hình minh họa. Có thể nghiên cứu hình tham khảo và dùng Google Flow của người dùng khi có quyền và công cụ phù hợp.
 
+Bản hiện hành dùng chữ sạch, không viền đậm, cỡ đủ đọc và canh từng cụm theo lời. Với bản cũ, nâng cấp theo quy trình trên trước khi dựng.
+
 [Bản hiện hành](https://raw.githubusercontent.com/manhlifecom-prog/tram-video/main/codex-skills/latest.json)

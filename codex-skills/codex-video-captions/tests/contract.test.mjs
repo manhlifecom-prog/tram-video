@@ -18,3 +18,14 @@ test('all required plain-text entry reference paths resolve',async()=>{const {ac
 test('reject tiny spoken text instead of shrinking a whole phrase',()=>{const p=clone();p.subtitles[0].blocks[0].size=46;assert.throws(()=>checkPlan(p),/Spoken subtitle font/);p.subtitles[0].blocks[0].size=64;assert.equal(checkPlan(p).exampleOnly,true)});
 
 test('caption entry is an explicit supported authoring choice',()=>{const p=clone();p.subtitles[0].blocks[0].entry='wipe';assert.equal(checkPlan(p).exampleOnly,true);p.subtitles[0].blocks[0].entry='random';assert.throws(()=>checkPlan(p),/Unsupported caption entrance/)});
+
+test('a speech line cannot pop all words in at one cue onset',()=>{
+ const p=clone(), c=p.subtitles[0], b=c.blocks[0];
+ c.kind='speech'; c.blocks=[b]; b.text='Match speech'; b.timingMode='token';
+ b.tokens=[{text:'Match',at:b.at},{text:'speech',at:b.at}];
+ assert.throws(()=>checkPlan(p),/distinct source onsets/);
+ b.tokens[1].at=b.at+.2;
+ assert.equal(checkPlan(p).exampleOnly,true);
+ b.tokens[1].at=c.end;
+ assert.throws(()=>checkPlan(p),/outside its displayed block/);
+});

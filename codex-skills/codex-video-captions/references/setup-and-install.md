@@ -1,6 +1,6 @@
 # Install and check local prerequisites
 
-This is the public beta **codex-video-captions 0.3.0-beta.6**, one entry and one complete workflow. The plan/runtime contract may still identify `0.3.0-working.1`; that is not a second skill. Installation copies verified managed instructions/code; it does not transcribe, edit or render a video. It does not install packages/models or grant generation/publication permission. No customer media, voice, music or profile belongs in this generic package.
+This is the public beta **codex-video-captions 0.3.0-beta.7**, one entry and one complete workflow. The plan/runtime contract may still identify `0.3.0-working.1`; that is not a second skill. Installation copies verified managed instructions/code; it does not transcribe, edit or render a video. It does not install packages/models or grant generation/publication permission. No customer media, voice, music or profile belongs in this generic package.
 
 ## Verified archive and explicit target
 

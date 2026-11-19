@@ -19,4 +19,6 @@ Bản hiện hành dùng chữ sạch, không viền đậm, cỡ đủ đọc v
 
 Bản hiện hành mặc định full hiệu ứng, tự thiết kế hình minh họa theo nội dung, kiểm nhịp chữ và lớp chữ sau người trước khi giao.
 
+Lời thoại xuất hiện theo mốc nói của từng từ hoặc cụm ngắn. SFX phải nghe được ở điểm hiệu ứng trong MP4. Ảnh minh họa có bố cục, chuyển động và thời điểm rõ ràng theo câu.
+
 [Bản hiện hành](https://raw.githubusercontent.com/manhlifecom-prog/tram-video/main/codex-skills/latest.json)

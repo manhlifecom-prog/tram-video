@@ -1,14 +1,14 @@
 {
   "schema": "codex-video-captions-managed-payload1",
   "entry": "codex-video-captions",
-  "releaseVersion": "0.3.0-beta.6",
+  "releaseVersion": "0.3.0-beta.7",
   "planContractVersion": "0.3.0-working.1",
   "status": "PUBLIC_BETA",
   "files": [
     {
       "path": "DEPENDENCY-PINS.json",
       "bytes": 500,
-      "sha256": "df20950f49969d153ef79ec44da1dc0e7b15d89f46f1423b973b6f6d7baae546"
+      "sha256": "9371eb9e3eb91c31322d0ca4f366eb94dac7154e23c6bef32130dd28a7b2ff07"
     },
     {
       "path": "LICENSE",
@@ -18,17 +18,17 @@
     {
       "path": "README.md",
       "bytes": 1938,
-      "sha256": "38e5ac933bc29604bd56e62aa34dd559dac3c5b71b49c3e6a24d910076cf06f2"
+      "sha256": "01f634a93559c824dedeb396ac771fb080a52b0478909c86e6301cc3d2ed00f5"
     },
     {
       "path": "SKILL.md",
-      "bytes": 5258,
-      "sha256": "b235be0fe652e2069bdff1fa26e6f34b6218fe2d0dac4e584dba0530da1a4f5e"
+      "bytes": 5385,
+      "sha256": "10f89307403cf46ad1d1317630cd72bd98b32a590660cd6d89b602e3eb3723cd"
     },
     {
       "path": "assets/ExpressiveSubtitles.tsx",
-      "bytes": 5395,
-      "sha256": "7c0d4c03af74e2b63c98e24780ac8d93dc18ca96cafad39f1211879aef3068ae"
+      "bytes": 5531,
+      "sha256": "aab066859b1911a46f23b9e8fb5ed5d56f275bdeaa71a6fc91e9a8db2c8ecab5"
     },
     {
       "path": "assets/WordFontAudit.tsx",
@@ -73,7 +73,7 @@
     {
       "path": "package.json",
       "bytes": 597,
-      "sha256": "c7722c1ce22d181c49e4e35d3b581a9c48e9f01231f10d8e661d79fa9acb68aa"
+      "sha256": "f912486b8fe3aba2e81fc83ff395062ee60aa27687e1b5339526b44d7f71fe96"
     },
     {
       "path": "project-plan.json",
@@ -132,13 +132,13 @@
     },
     {
       "path": "references/caption-craft.md",
-      "bytes": 3166,
-      "sha256": "f3dcc3368700746e45a7c8b6161b4e6e8509647b1a00600b430c15d2954d85e3"
+      "bytes": 3938,
+      "sha256": "07360d7b795d8418f134c8be2e32e0d1069dac9a3b1d82b30b074152d46be54a"
     },
     {
       "path": "references/first-delivery.md",
-      "bytes": 2294,
-      "sha256": "e487a8583ce0f27a18ac37392dc4df616bb7440af43551eacf97cac64e889e4f"
+      "bytes": 2795,
+      "sha256": "e24b7ebba4734e5c40b78a00fb4f39dee018fc1d4d6bb361f1ebab736593bb65"
     },
     {
       "path": "references/link-intake.md",
@@ -148,7 +148,7 @@
     {
       "path": "references/setup-and-install.md",
       "bytes": 6427,
-      "sha256": "d68b8f9bb6ded776cd1a3e7b232194e5c338e048570c2bab334c0b5be4b6a058"
+      "sha256": "99d8af0f68cd29e219e388d0a63f07ab4fa92e544fbe30725887c8b65da1985d"
     },
     {
       "path": "references/video-dna.md",
@@ -187,8 +187,8 @@
     },
     {
       "path": "scripts/check-plan.mjs",
-      "bytes": 8049,
-      "sha256": "8a52afcc249e7671b8e5721f1a5b5a1c7e999d91bbf7a724dffa240fa9fa81e4"
+      "bytes": 8331,
+      "sha256": "597107713ecb51b260e848fb9a509c2bf01f27e374251d8e8ecc2ed539895efa"
     },
     {
       "path": "scripts/install.py",
@@ -262,8 +262,8 @@
     },
     {
       "path": "tests/contract.test.mjs",
-      "bytes": 3292,
-      "sha256": "713a5213692fb3bc652f796a405b7dddc8f0c1eb245f05fe3ff41793a282589d"
+      "bytes": 3770,
+      "sha256": "8090f8c8575814d5670c8a8c0a9302508de7a280cccae119b0f0ba3494f41ede"
     }
   ],
   "manifestSelfHash": "External handoff/ZIP SHA; manifest intentionally excludes itself",

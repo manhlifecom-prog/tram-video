@@ -1,6 +1,6 @@
 # Trạm Video — open source
 
-**Skill hiện tại: codex-video-captions 0.3.0-beta.6.** [Cài một lần, sau đó gửi link](FOR-CODEX.md), [hướng dẫn](codex-skills/README.md), [ZIP mới](downloads/codex-video-captions-0.3.0-beta.6.zip). Một entry `$codex-video-captions`: sub theo nghĩa/gu, word motion chọn lọc, hook/cảnh, phone/matte có điều kiện, optional offline ASR và audio QA. Không chứa dữ liệu khách hoặc Trạm SaaS.
+**Skill hiện tại: codex-video-captions 0.3.0-beta.7.** [Cài một lần, sau đó gửi link](FOR-CODEX.md), [hướng dẫn](codex-skills/README.md), [ZIP mới](downloads/codex-video-captions-0.3.0-beta.7.zip). Một entry `$codex-video-captions`: sub theo nghĩa/gu, word motion chọn lọc, hook/cảnh, phone/matte có điều kiện, optional offline ASR và audio QA. Không chứa dữ liệu khách hoặc Trạm SaaS.
 
 Đây là beta dùng cục bộ, không bảo đảm mọi máy/format hoặc chất lượng tự động từ một lệnh. Read capability/setup; thiếu phải báo rõ, không fallback starter yếu. Code MIT; font/dependency có điều khoản riêng.
 

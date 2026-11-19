@@ -11,4 +11,6 @@ Nếu nâng cấp, giữ DNA/video/cấu hình và tạo backup ngoài thư mụ
 
 Sau khi cài, mở chat Codex mới nếu cần để Codex nhận mô tả skill. Dán thẳng link Drive chứa video, hoặc đính kèm video và nhắn “làm video này”. Skill kiểm bản mới trước khi dựng. Nếu thư mục có nhiều video chính chưa rõ, Codex sẽ hỏi chọn file. Mặc định dựng đầy đủ, nhiều hiệu ứng theo nội dung, phụ đề rõ và nhấn có chọn lọc; giảm khi người dùng yêu cầu. Kết quả là MP4 để xem riêng.
 
+Nhạc nền chỉ dùng file hoặc link TikTok/Facebook do người yêu cầu chọn và có quyền dùng. Chưa có thì dựng không nhạc nền. Codex tự xử lý SFX theo cảnh. Kho nhạc mẫu cần chủ skill duyệt trước khi đưa vào gói.
+
 [Bản hiện hành](https://raw.githubusercontent.com/manhlifecom-prog/tram-video/main/codex-skills/latest.json)

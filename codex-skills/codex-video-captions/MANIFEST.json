@@ -1,7 +1,7 @@
 {
   "schema": "codex-video-captions-managed-payload1",
   "entry": "codex-video-captions",
-  "releaseVersion": "0.3.0-beta.2",
+  "releaseVersion": "0.3.0-beta.3",
   "planContractVersion": "0.3.0-working.1",
   "status": "PUBLIC_BETA",
   "files": [
@@ -18,12 +18,12 @@
     {
       "path": "README.md",
       "bytes": 1938,
-      "sha256": "13ba67caba55a13d46c642231a9dc65e4102a8687617c7b9a8ff664cb933424f"
+      "sha256": "02d00fe2a486f002d16bbbfcda638c74dfe4772d536319dc87c5028feab64f5e"
     },
     {
       "path": "SKILL.md",
-      "bytes": 2660,
-      "sha256": "8cafb8f62976f4aeb2812280571e1386627f9741c2d205884bc2cbc7d30e7aad"
+      "bytes": 3570,
+      "sha256": "d2e30659ae4638f1cf6e3930055c756c13f6026a46a244209353d2ba44798f36"
     },
     {
       "path": "assets/ExpressiveSubtitles.tsx",
@@ -73,7 +73,7 @@
     {
       "path": "package.json",
       "bytes": 597,
-      "sha256": "687da3dbb42fcd377c1e11bd127a948c259146b74cb3f139d916cb5fd01c9484"
+      "sha256": "c24c1e0375cc9c3360a8f72a18ba0badd3e93cbc551af999361f0f8e8196c7e5"
     },
     {
       "path": "project-plan.json",
@@ -122,23 +122,23 @@
     },
     {
       "path": "references/WORKFLOW.md",
-      "bytes": 3880,
-      "sha256": "dafecbfee1873bd2669e6308f658663891692b2df5ddf926f499ba604b149d01"
+      "bytes": 4404,
+      "sha256": "1980f234688db734eceb3beb7ec83c51d4c5d771a8842428abc68f9f98bbe284"
     },
     {
       "path": "references/audio-recipe.md",
-      "bytes": 6077,
-      "sha256": "a559ea6143c2fbabb02b4663aa0e809bc020ccf43211ec1b3fb438c8e78bd6f2"
+      "bytes": 6458,
+      "sha256": "b9f9b87de6e732e2c466092f293ec0a49190822c94724be339cbc4a492a52a62"
     },
     {
       "path": "references/link-intake.md",
-      "bytes": 3244,
-      "sha256": "ef24490bd4041e7b66a0d21bc39aa1013294a319eb71f7af9bc2ce909c578de3"
+      "bytes": 3442,
+      "sha256": "fd90bbf2e12750c86539e0abcd10eebbe687f394f7967c111621b2041c08bdac"
     },
     {
       "path": "references/setup-and-install.md",
       "bytes": 6427,
-      "sha256": "ced23fcd63435db730c4e471360db427d9596e8639f14e97654a68112f790594"
+      "sha256": "13c1188ef07181dcfc27b3ac872fac260dfb82ccdb91e2a1ca1a0057610b182a"
     },
     {
       "path": "schemas/plan.schema.json",

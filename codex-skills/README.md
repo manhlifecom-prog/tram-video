@@ -1,6 +1,6 @@
-# codex-video-captions0.3.0-beta.2
+# codex-video-captions0.3.0-beta.3
 
-Một entry và workflow người nói đầy đủ hơn0.2: [cài một lần, sau đó gửi link](../FOR-CODEX.md), [setup](codex-video-captions/references/setup-and-install.md), [workflow](codex-video-captions/references/WORKFLOW.md), [capabilities](codex-video-captions/references/CAPABILITIES.md). [ZIP mới](../downloads/codex-video-captions-0.3.0-beta.2.zip).
+Một entry và workflow người nói đầy đủ hơn0.2: [cài một lần, sau đó gửi link](../FOR-CODEX.md), [setup](codex-video-captions/references/setup-and-install.md), [workflow](codex-video-captions/references/WORKFLOW.md), [capabilities](codex-video-captions/references/CAPABILITIES.md). [ZIP mới](../downloads/codex-video-captions-0.3.0-beta.3.zip).
 
 Không cần token GitHub/API key/Trạm login để tải và cài skill. Media/model/browser/dependencies/provider là prerequisites riêng, không được giả đã có. Cài trước, dùng source/profile/gu của bạn, không nhận DNA/video/nhạc khách khác.
 

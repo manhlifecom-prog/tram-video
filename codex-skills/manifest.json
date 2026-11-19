@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "skill": "codex-video-captions",
-  "version": "0.3.0-beta.1",
+  "version": "0.3.0-beta.2",
   "status": "clean-shared-beta-not-universal-or-sale-guarantee",
   "files": [
     {
@@ -16,18 +16,18 @@
     },
     {
       "path": "codex-video-captions/MANIFEST.json",
-      "bytes": 8146,
-      "sha256": "858198eb131e8c413aa00c85815a2b0c70811f38e032ec92278b7fc1b973454d"
+      "bytes": 8277,
+      "sha256": "6df347381bc5e76b48e50669ab50f1108a43edb297d1b135a93d207cfb990b09"
     },
     {
       "path": "codex-video-captions/README.md",
       "bytes": 1938,
-      "sha256": "248aa081cf335434e4449d04586759c5fb6030d0ad6e7cabe568b668155faefc"
+      "sha256": "13ba67caba55a13d46c642231a9dc65e4102a8687617c7b9a8ff664cb933424f"
     },
     {
       "path": "codex-video-captions/SKILL.md",
-      "bytes": 1664,
-      "sha256": "0b3b61a6e9051828dca04c0b776c1ddcbf605bdf705554264d2a0b20686d6f03"
+      "bytes": 2660,
+      "sha256": "8cafb8f62976f4aeb2812280571e1386627f9741c2d205884bc2cbc7d30e7aad"
     },
     {
       "path": "codex-video-captions/assets/ExpressiveSubtitles.tsx",
@@ -77,7 +77,7 @@
     {
       "path": "codex-video-captions/package.json",
       "bytes": 597,
-      "sha256": "7db533133db2a3480eac23c58b7890ad327f922c7f2e7fc04e7da51de1adf119"
+      "sha256": "687da3dbb42fcd377c1e11bd127a948c259146b74cb3f139d916cb5fd01c9484"
     },
     {
       "path": "codex-video-captions/project-plan.json",
@@ -126,8 +126,8 @@
     },
     {
       "path": "codex-video-captions/references/WORKFLOW.md",
-      "bytes": 3512,
-      "sha256": "020a565b8e215bbbf2e27ca7fa10c97bfc72bd9fadf4f8769200a52b112955fc"
+      "bytes": 3880,
+      "sha256": "dafecbfee1873bd2669e6308f658663891692b2df5ddf926f499ba604b149d01"
     },
     {
       "path": "codex-video-captions/references/audio-recipe.md",
@@ -135,9 +135,14 @@
       "sha256": "a559ea6143c2fbabb02b4663aa0e809bc020ccf43211ec1b3fb438c8e78bd6f2"
     },
     {
+      "path": "codex-video-captions/references/link-intake.md",
+      "bytes": 3244,
+      "sha256": "ef24490bd4041e7b66a0d21bc39aa1013294a319eb71f7af9bc2ce909c578de3"
+    },
+    {
       "path": "codex-video-captions/references/setup-and-install.md",
-      "bytes": 6525,
-      "sha256": "1ee0d7d0821e3ae5dd2f53806ecb27c38c53f63c56144906f02febced54e8f94"
+      "bytes": 6427,
+      "sha256": "ced23fcd63435db730c4e471360db427d9596e8639f14e97654a68112f790594"
     },
     {
       "path": "codex-video-captions/schemas/plan.schema.json",

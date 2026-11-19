@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "skill": "codex-video-captions",
+  "version": "0.3.0-beta.2",
+  "archive": {
+    "path": "downloads/codex-video-captions-0.3.0-beta.2.zip",
+    "bytes": 244628,
+    "sha256": "7a3ce5021ff1a4bc837870789de934e9eae5eab39c2fcb69205df8e5bf6ffa34"
+  }
+}

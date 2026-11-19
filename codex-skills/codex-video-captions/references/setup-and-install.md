@@ -1,6 +1,6 @@
 # Install and check local prerequisites
 
-This is the clean release candidate **codex-video-captions 0.3.0-beta.1**, one entry and one complete workflow. The plan/runtime contract may still identify `0.3.0-working.1`; that is not a second skill. Public release requires the independently verified final archive and a real GitHub commit/download binding. Installation copies verified managed instructions/code; it does not transcribe, edit or render a video. It does not install packages/models or grant generation/publication permission. No customer media, voice, music or profile belongs in this generic package.
+This is the public beta **codex-video-captions 0.3.0-beta.2**, one entry and one complete workflow. The plan/runtime contract may still identify `0.3.0-working.1`; that is not a second skill. Installation copies verified managed instructions/code; it does not transcribe, edit or render a video. It does not install packages/models or grant generation/publication permission. No customer media, voice, music or profile belongs in this generic package.
 
 ## Verified archive and explicit target
 
@@ -24,7 +24,7 @@ Backups must sit **outside** skills discovery and package source. They contain o
 
 ## Project-local environment
 
-Make a separate private working copy and load this skill before invoking `$codex-video-captions`. Supply the customer's source, source-bound transcript/EDL, explicit profile and rights-cleared resources. `examples/neutral-plan.json` is synthetic and must fail media preflight until replaced with real inputs.
+Make a separate private working copy and load this skill when the user sends a video link or asks for a video. Supply the customer's source, source-bound transcript/EDL, explicit profile and rights-cleared resources. `examples/neutral-plan.json` is synthetic and must fail media preflight until replaced with real inputs.
 
 ```sh
 node scripts/check-environment.mjs --project /absolute/working-project
@@ -49,4 +49,4 @@ The adapter denies Python socket calls, forces Hugging Face offline and decodes 
 
 ## Run the workflow, then review the actual result
 
-Read `WORKFLOW.md`, `CAPABILITIES.md` and [audio-recipe.md](audio-recipe.md). Validate the plan, inspect representative stills/motion, then explicitly authorize one full render. Installation/setup checks do not complete those stages. Load real source/profile/reference; retain approved clause meaning and original voice. Stop unsupported requests rather than silently rendering a weaker starter. Actual encoded playback and fullmix listening are required for creative acceptance; static checks and successful installation cannot promise reference-level taste.
+Read `WORKFLOW.md`, `CAPABILITIES.md` and [audio-recipe.md](audio-recipe.md). Validate the plan, inspect representative stills/motion, then render if the user asked for a finished video. Installation/setup checks do not complete those stages. Load real source/profile/reference; retain approved clause meaning and original voice. Stop unsupported requests rather than silently rendering a weaker starter. Actual encoded playback and fullmix listening are required for creative acceptance; static checks and successful installation cannot promise reference-level taste.

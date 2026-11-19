@@ -1,6 +1,6 @@
 # Trạm Video — open source
 
-**Skill hiện tại: codex-video-captions0.3.0-beta.1.** [Hai câu nhắn cài/dùng trong Codex](FOR-CODEX.md), [hướng dẫn](codex-skills/README.md), [ZIP mới](https://raw.githubusercontent.com/manhlifecom-prog/tram-video/9429a2563c31abcd06e39377ce7db99321367742/downloads/codex-video-captions-0.3.0-beta.1.zip). Một entry `$codex-video-captions`: sub theo nghĩa/gu, word motion chọn lọc, hook/cảnh, phone/matte có điều kiện, optional offline ASR và audio QA. Không chứa dữ liệu khách hoặc Trạm SaaS.
+**Skill hiện tại: codex-video-captions 0.3.0-beta.2.** [Cài một lần, sau đó gửi link](FOR-CODEX.md), [hướng dẫn](codex-skills/README.md), [ZIP mới](downloads/codex-video-captions-0.3.0-beta.2.zip). Một entry `$codex-video-captions`: sub theo nghĩa/gu, word motion chọn lọc, hook/cảnh, phone/matte có điều kiện, optional offline ASR và audio QA. Không chứa dữ liệu khách hoặc Trạm SaaS.
 
 Đây là beta dùng cục bộ, không bảo đảm mọi máy/format hoặc chất lượng tự động từ một lệnh. Read capability/setup; thiếu phải báo rõ, không fallback starter yếu. Code MIT; font/dependency có điều khoản riêng.
 
@@ -60,7 +60,7 @@ Xem [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) và [THIRD_PA
 
 ## Skill hiện tại và lịch sử
 
-Dùng [FOR-CODEX.md](FOR-CODEX.md) để tải đúng bản0.3.0-beta.1 ghim commit/SHA256. Installer managed giữ dữ liệu/DNA và backup ngoài skills discovery; cài đặt chưa phải workflow dựng video.
+Dùng [FOR-CODEX.md](FOR-CODEX.md) để tải bản mới nhất theo SHA-256 công bố. Installer managed giữ dữ liệu/DNA và backup ngoài skills discovery; cài đặt chưa phải workflow dựng video.
 
 Bản0.2.0-beta.1 giữ trong [legacy](codex-skills/legacy/codex-video-captions-0.2.0-beta.1/) và [ZIP cũ](downloads/codex-video-captions-0.2.0-beta.1.zip); ZIP20261112/lịch sử/source legacy vẫn nguyên. Không dùng link cài cũ làm mặc định.
 

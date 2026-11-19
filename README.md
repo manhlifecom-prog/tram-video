@@ -1,5 +1,9 @@
 # Trạm Video — open source
 
+**Skill Codex mới để bạn bè thử:0.2.0-beta.1.** Đọc [câu nhắn chỉ cần dán vào Codex](FOR-CODEX.md), hoặc [hướng dẫn cài](codex-skills/README.md). [Tải ZIP mới](downloads/codex-video-captions-0.2.0-beta.1.zip). Tên gọi chính `$codex-video-captions`; tên cũ `$tram-video-studio` chuyển tới cùng bản mới. Đây là beta phạm vi phụ đề/người nói, không phải sản phẩm đã nghiệm thu để bán.
+
+Phần dưới giữ hướng dẫn renderer OSS legacy; dùng link trên nếu bạn muốn cài skill hiện tại.
+
 Biến video nói chuyện và transcript tiếng Việt thành video dọc có phụ đề và minh họa chuyển động theo từng đoạn lời. Tách từ phần dựng hình của Trạm Video do Mạnh phát triển; bản cộng đồng đầu tiên, chưa có số liệu người dùng công khai.
 
 ## Chạy nhanh
@@ -55,4 +59,6 @@ Xem [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) và [THIRD_PA
 
 ## Skill Codex dùng trên máy khác
 
-Tải và cài bộ **[tram-video-studio](codex-skills/README.md)** để dùng quy trình dựng, học mẫu và kiểm chất lượng trong Codex. **[Tải ZIP skill](https://github.com/manhlifecom-prog/tram-video/raw/refs/heads/main/downloads/tram-video-studio-20261112.zip)**. Bộ skill không kèm tài khoản/token, thư viện nhạc thương mại, dữ liệu khách hoặc máy chủ Trạm.
+Bản hiện tại: [codex-video-captions0.2.0-beta.1](codex-skills/README.md). [Câu nhắn tải/cài tự động trong Codex](FOR-CODEX.md) ghim commit và SHA256. Bộ cài cập nhật router tên cũ, backup managed files và giữ riêng dữ liệu/DNA của bạn.
+
+[ZIP tram-video-studio2026.11.12](downloads/tram-video-studio-20261112.zip) là bản legacy để khôi phục, không phải bản cài mặc định. Toàn bộ lịch sử, code và assets legacy vẫn được giữ.

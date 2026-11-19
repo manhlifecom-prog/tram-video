@@ -1,0 +1,52 @@
+{
+  "profileVersion": "0.1.0",
+  "id": "demo-b",
+  "name": "Demo B · Paper blue",
+  "scope": "One presenter explainer sample; demo-only identity, no customer assets",
+  "palette": {
+    "background": "#f2eee7",
+    "surface": "#fdfbf7",
+    "shape": "#518296",
+    "shapeShade": "#244e65",
+    "text": "#203a49",
+    "accent": "#316f8d",
+    "soft": "#3f7891",
+    "muted": "#657985"
+  },
+  "typography": {
+    "fontId": "be-vietnam-pro",
+    "bodyScale": 0.96,
+    "keyScale": 0.9,
+    "shadowOpacity": 0.06
+  },
+  "layout": {
+    "captionOffsetY": -90,
+    "captionLeft": 105,
+    "captionRight": 115,
+    "videoFit": "contain"
+  },
+  "motion": {
+    "policy": "mostly-phrase-sparse-emphasis",
+    "allowedModes": [
+      "reveal",
+      "calm",
+      "shine",
+      "spring",
+      "curious",
+      "tension",
+      "burst",
+      "word-soft",
+      "word-spring",
+      "word-curious",
+      "word-spark"
+    ],
+    "maxSpecialCuesInRow": 1
+  },
+  "preserve": {
+    "faceIdentity": true,
+    "sourceVoice": true,
+    "liveSpeaker": true,
+    "semanticNegation": true
+  },
+  "cropRule": "Choose the actual current speaker from this source; protect the face and mouth. No automatic tracking is supplied."
+}

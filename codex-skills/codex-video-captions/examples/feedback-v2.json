@@ -1,0 +1,13 @@
+{
+  "basedOn": "geometry-technical-v1",
+  "request": "Cụm hiểu rõ. đặt riêng dòng dưới, giảm cỡ chữ nhấn và bỏ nảy để điềm hơn. Giữ nguyên mốc xuất hiện và câu thứ hai.",
+  "resultInput": "demo-v2.json",
+  "unchanged": [
+    "duration",
+    "fps",
+    "source",
+    "timingBasis",
+    "all cue start/end/tokenOnsets",
+    "second cue"
+  ]
+}

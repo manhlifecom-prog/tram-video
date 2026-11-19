@@ -1,0 +1,17 @@
+{
+  "sameInputDifferentProfiles": {
+    "cuesEqual": true,
+    "sourceEqual": true,
+    "timingBasisEqual": true,
+    "differentProfileIds": true,
+    "differentProfileHashes": true,
+    "differentOutputHashes": true
+  },
+  "newInputSameProfile": {
+    "newContent": true,
+    "sameProfileId": true,
+    "sameProfileHash": true,
+    "differentOutputHash": true
+  },
+  "visualInspection": "PNG at2.2s inspected for all three final profiles; B shadow reduced after first draft. Consistency evidence covers these frames and hashes, not full subjective playback."
+}

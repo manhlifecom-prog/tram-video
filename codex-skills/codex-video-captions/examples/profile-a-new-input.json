@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "new-input-profile-a",
+  "duration": 8,
+  "fps": 24,
+  "source": {
+    "kind": "geometry",
+    "provenance": "Original procedural geometry generated for this kit. No real person, third-party media, voice or music."
+  },
+  "timingBasis": {
+    "kind": "synthetic-cue",
+    "note": "Synthetic visual events at1.8s and6.1s; not speech alignment or ASR.",
+    "listened": false
+  },
+  "captionTop": 1390,
+  "cues": [
+    {
+      "start": 0.6,
+      "end": 3.9,
+      "text": "Đi từng bước để nhìn rõ.",
+      "key": "nhìn rõ.",
+      "choice": {
+        "start": 0.6,
+        "mode": "reveal",
+        "emotion": "rõ từng bước",
+        "reason": "New content in the same profile; simple phrase reveal preserves a quiet explanatory rhythm.",
+        "lines": [
+          "Đi từng bước để",
+          "nhìn rõ."
+        ],
+        "bodySize": 54,
+        "keySize": 72,
+        "tokenOnsets": [
+          0,
+          0,
+          0,
+          0.75,
+          1.2,
+          1.2
+        ]
+      }
+    },
+    {
+      "start": 4.2,
+      "end": 7.65,
+      "text": "Giữ nhất quán mà linh hoạt.",
+      "key": "linh hoạt.",
+      "choice": {
+        "start": 4.2,
+        "mode": "shine",
+        "emotion": "chốt ý linh hoạt",
+        "reason": "A single short shine emphasizes flexibility at the second authored geometric event.",
+        "lines": [
+          "Giữ nhất quán mà",
+          "linh hoạt."
+        ],
+        "bodySize": 54,
+        "keySize": 78,
+        "tokenOnsets": [
+          0,
+          0,
+          0.6,
+          0.6,
+          1.9,
+          1.9
+        ]
+      }
+    }
+  ],
+  "profileId": "demo-a"
+}

@@ -14,3 +14,13 @@ jobs:
       - run: npm test
       - run: npm run typecheck
       - run: npm run plan -- examples/transcript.json
+  captions-beta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python3 codex-skills/install.py --check
+      - run: python3 codex-skills/test_install.py
+      - run: node --test codex-skills/codex-video-captions/scripts/check-input.test.mjs codex-skills/codex-video-captions/scripts/cache-identity.test.mjs

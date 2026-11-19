@@ -1,0 +1,68 @@
+{
+  "version": "0.2.0-beta.1",
+  "code": {
+    "helper": "assets/EmotionalCaption.tsx",
+    "sha256": "d4d06cbc9cfff6917a6bb131e01079dbb04b63cf4fcaa778efaabd0079fa0ed3",
+    "method": "Byte-identical copy of project-authored reusable caption helper; no source media or private paths.",
+    "licenseStatus": "MIT, retained from existing manhlifecom-prog/tram-video project; third-party dependencies and fonts retain their own licenses"
+  },
+  "fonts": [
+    {
+      "file": "public/fonts/BeVietnamPro-Medium.ttf",
+      "sha256": "b60832bfa0fcd015158112c64d7e3fdad3b0c6287d1823f85a3103636e845268",
+      "license": "SIL Open Font License1.1",
+      "project": "The Be Vietnam Pro Project Authors",
+      "upstream": "https://github.com/bettergui/BeVietnamPro"
+    },
+    {
+      "file": "public/fonts/BeVietnamPro-Bold.ttf",
+      "sha256": "7f738fe5c43c8872807b20e2d30d42163618de8a4daf7f48a939adac32c16847",
+      "license": "SIL Open Font License1.1",
+      "project": "The Be Vietnam Pro Project Authors",
+      "upstream": "https://github.com/bettergui/BeVietnamPro"
+    },
+    {
+      "file": "public/fonts/OFL.txt",
+      "sha256": "6b7f8f73609a25ea78c891e34cf37b06f8a676b7ea986e941e43b009110f2a85",
+      "license": "SIL Open Font License1.1",
+      "project": "The Be Vietnam Pro Project Authors",
+      "upstream": "https://github.com/bettergui/BeVietnamPro"
+    },
+    {
+      "file": "public/fonts/BeVietnamPro-ExtraBoldItalic.ttf",
+      "sha256": "b5544a50b74c3153f7aa68614cfaebbea924869e6d6fdfd4ec80decfdd7ff4cd",
+      "license": "SIL Open Font License1.1",
+      "project": "The Be Vietnam Pro Project Authors",
+      "upstream": "https://github.com/bettergui/BeVietnamPro"
+    }
+  ],
+  "demo": {
+    "kind": "original-procedural-geometry",
+    "sourceMediaCopied": false,
+    "speakerVoiceMusicIncluded": false
+  },
+  "profileAdapter": {
+    "file": "assets/EmotionalCaptionProfiled.tsx",
+    "sha256": "69175a4564fbbc5a8442bf9438713b4d48935d83b14f2358c36c61b6149e44ec",
+    "sourceHelperSha256": "d4d06cbc9cfff6917a6bb131e01079dbb04b63cf4fcaa778efaabd0079fa0ed3",
+    "changes": "CSS variables for profile palette, caption side margins, shadow color and exported component name. Timing/content logic retained."
+  },
+  "profiles": [
+    {
+      "id": "demo-a",
+      "sha256": "722a261a405910b8f439d4c74efc8daf733bf86bce878c7ba8482c8126fd8b08",
+      "identity": "Original demo configuration; no real customer assets"
+    },
+    {
+      "id": "demo-b",
+      "sha256": "57f91f8bcc2afe8a6f49aeeddd2c489b6c7a69ea1a611e4782765cd75e8b063b",
+      "identity": "Original demo configuration; no real customer assets"
+    }
+  ],
+  "frozenOrigin": {
+    "version": "0.1.0-candidate",
+    "zipSha256": "7e0f8aa7ad9f939bf790ede97d32d106e5eb57ff38d88cc4904aaa2400294f71",
+    "manifestSha256": "78f3d0353c445db30c1fbf29bdf93d5e89a5a658c88daca92fbe17adb9dfa719",
+    "distributionChanges": "Public beta version, installation/migration, documentation and existing-project license notice. Caption helper, renderer, validators and five geometry demos retained."
+  }
+}

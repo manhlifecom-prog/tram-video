@@ -1,0 +1,231 @@
+{
+  "version": "2026.11.12",
+  "skill": "tram-video-studio",
+  "files": [
+    {
+      "path": "tram-video-studio/SKILL.md",
+      "sha256": "de52100d0b045385737659b94bb3b94c949f3a75d721d1d7275d4d975fbd71f6",
+      "bytes": 5526
+    },
+    {
+      "path": "tram-video-studio/assets/motion/focus-camera.ts",
+      "sha256": "99359b3f379842a1397800741590f209d03b1d0374854278cb1a58518f34e366",
+      "bytes": 813
+    },
+    {
+      "path": "tram-video-studio/assets/motion/reference-count-steps.tsx",
+      "sha256": "7ffa0f2f55bd03a8f191b0c7e87e32626b6697ac0e21176e672ca4944996b6d2",
+      "bytes": 2390
+    },
+    {
+      "path": "tram-video-studio/assets/motion/reference-document-regroup.tsx",
+      "sha256": "e7441f84f4c49009fd3990e1b9bf878c6492adb60cf98c4eb9b0da5b05c49867",
+      "bytes": 4642
+    },
+    {
+      "path": "tram-video-studio/assets/starter/.gitignore",
+      "sha256": "8d6364a56f8c278b0a5cf1c7bdee310ba00883f1f77e2143f13d93805fd8f844",
+      "bytes": 61
+    },
+    {
+      "path": "tram-video-studio/assets/starter/CONTRIBUTING.md",
+      "sha256": "00719fb5469ed58203da44c274a5da7ab619aae0cfaeb926b263978651b664e4",
+      "bytes": 515
+    },
+    {
+      "path": "tram-video-studio/assets/starter/LICENSE",
+      "sha256": "7cd2ac9bf82938757414d733432876452fe551efa873a66404c7bfb7c3efc2cf",
+      "bytes": 1082
+    },
+    {
+      "path": "tram-video-studio/assets/starter/README.md",
+      "sha256": "747627ed71f5fca69903992b2780581295492a0a3e47bfbd5318dd067d71a1b1",
+      "bytes": 3566
+    },
+    {
+      "path": "tram-video-studio/assets/starter/SECURITY.md",
+      "sha256": "ff3967c7c0bbe90b9c3d6fcdf07ab3e0930e344ce2f6c83a695a4812f93e216b",
+      "bytes": 510
+    },
+    {
+      "path": "tram-video-studio/assets/starter/THIRD_PARTY_NOTICES.md",
+      "sha256": "c3a46ac3ea35875df2e5da0f35d317e78088b3d2e5c1ff9fe30dcb593e38d77e",
+      "bytes": 776
+    },
+    {
+      "path": "tram-video-studio/assets/starter/examples/transcript.json",
+      "sha256": "e6fd7111ce10d58db846cbadcf8f0e80c43026a989e2e50d64266a3c93b74a70",
+      "bytes": 394
+    },
+    {
+      "path": "tram-video-studio/assets/starter/package.json",
+      "sha256": "ee6e89daf121b44ae44ec5e29c0b321809b004960bcf5bff93f57e050b801ef6",
+      "bytes": 1059
+    },
+    {
+      "path": "tram-video-studio/assets/starter/pnpm-lock.yaml",
+      "sha256": "43f448f518f6a1b22a6465b98a9acaf722251b37b3effbc10930c2b1ff4ff848",
+      "bytes": 102182
+    },
+    {
+      "path": "tram-video-studio/assets/starter/public/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "tram-video-studio/assets/starter/scripts/plan.test.ts",
+      "sha256": "6fbb96b48183fc6b06a5579dcd4c3091b29c967da13bedaa22a97470b6da5c4f",
+      "bytes": 729
+    },
+    {
+      "path": "tram-video-studio/assets/starter/scripts/plan.ts",
+      "sha256": "56220e6fc1677900f1cea5e1d4a43a9b525cf889b495ea7c607a6e1d5aa4f206",
+      "bytes": 2946
+    },
+    {
+      "path": "tram-video-studio/assets/starter/src/lib/studio/editorial.ts",
+      "sha256": "1963f547e271f0115e68339f7de31c017e0cfdc0d31f0725b9e18cc774987051",
+      "bytes": 7653
+    },
+    {
+      "path": "tram-video-studio/assets/starter/src/lib/studio/graphic-spec.ts",
+      "sha256": "48be5bd710c1534d0c11957e0a4644883483938546883a25a1819f6b72aff211",
+      "bytes": 4374
+    },
+    {
+      "path": "tram-video-studio/assets/starter/src/lib/studio/motion-props.ts",
+      "sha256": "a26998c034c5be57168f86e7c7c0843f3f1f62910f61faa49d8d973acf9a5306",
+      "bytes": 4365
+    },
+    {
+      "path": "tram-video-studio/assets/starter/src/lib/studio/publishing-types.ts",
+      "sha256": "f80b043155f30651baf71073b6000e4036a5d17e90387124d48237e6dce3229c",
+      "bytes": 2599
+    },
+    {
+      "path": "tram-video-studio/assets/starter/src/lib/studio/sentence-effects.test.ts",
+      "sha256": "b1539b41cdc633edce37c16738968dd0ad8e7f2540a2c8672c516c0992102a4c",
+      "bytes": 3770
+    },
+    {
+      "path": "tram-video-studio/assets/starter/src/lib/studio/sentence-effects.ts",
+      "sha256": "34c0b5dee3c05636df20c9e650adf2ce482314f7100cd660d8c4e312fbf6cc8b",
+      "bytes": 6568
+    },
+    {
+      "path": "tram-video-studio/assets/starter/src/lib/studio/types.ts",
+      "sha256": "1f8e2513e10ffc9e00a4cf91b9310eedae82dade0ea5f3d02cdeec4efe42eac0",
+      "bytes": 4851
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/AssetScene.tsx",
+      "sha256": "1ffccf8c0bbbbde130030a4e947e1ac5aa4d333f4d0d402527690a2d99c42fb6",
+      "bytes": 3301
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/Composition.tsx",
+      "sha256": "c05c3f2d8c0054a1e38cc7ed66f8221ef6a005d7f1ee4bdd2c8101cc8d52fd1e",
+      "bytes": 6725
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/CustomGraphic.tsx",
+      "sha256": "ace2da8893c80c18dd933f13d068abfee98fb6ad949d9f974e202927e48f2ced",
+      "bytes": 3936
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/Graphics.tsx",
+      "sha256": "83215fec0ce2e5184e297fb328cb876183945e80a9e9ea84ac1a717f601fe0d3",
+      "bytes": 15650
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/PhysicalObject.tsx",
+      "sha256": "9f05b2a17115b58cea610d4a8da9c03478916c029b1f2e4ee1bc053f1c3e110f",
+      "bytes": 5689
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/ProductOverlay.tsx",
+      "sha256": "8bfbba59fdfcb20abd4384ddd962fc982692165e78fd197f6fd8bd5237be17e1",
+      "bytes": 2204
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/Root.tsx",
+      "sha256": "cee84d338655b15226cd2598a6d6542f510e37d68c4b6853a025b6d3e2fdc1ba",
+      "bytes": 1100
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/SourceOverlay.tsx",
+      "sha256": "989a7c5d76996da4bf8915859d44c2036a5a4ba267570bfbe2253b49009dada7",
+      "bytes": 1808
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/caption-timing.ts",
+      "sha256": "abefbeaee4bc32e1ce165bd6e14fef55c10a34793acfafac2c499b1203f518af",
+      "bytes": 970
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/creator/CreatorObjects.tsx",
+      "sha256": "95909193dc2c5d743c1d90695676069738be0e398b5c8daa0f24e3f48e3cb8e0",
+      "bytes": 3936
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/creator/CreatorScene.tsx",
+      "sha256": "d13f04100a6d39928c1309265d013f18a2b328e974ee327420a7ad1c498860c2",
+      "bytes": 8001
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/creator/SemanticArt.tsx",
+      "sha256": "4d8978175e2b93f9df63a3849d96aeb38a86fde509cf3340e6944c523edb8494",
+      "bytes": 19412
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/creator/SemanticScene.tsx",
+      "sha256": "d1a1b1d650f9d9e14e42198a7dcae1e05dc4ef900e1bcca6f4b75f8888ff3e62",
+      "bytes": 3172
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/creator/palette.ts",
+      "sha256": "3bcdd24c4a0993fb33ff2fa1aa66e34dfdb4abb04068bed0c93c965fc193ca30",
+      "bytes": 298
+    },
+    {
+      "path": "tram-video-studio/assets/starter/studio-motion/src/index.ts",
+      "sha256": "957e481dd33a29b4a55ae0e95dbf763b7e48c37c427ca4bd1275faf34bc07a74",
+      "bytes": 109
+    },
+    {
+      "path": "tram-video-studio/assets/starter/tsconfig.json",
+      "sha256": "4e4892283f0c5080cbc20c2c4a53e4f3984d4357a4ec4ce740342b54fcd1bb97",
+      "bytes": 351
+    },
+    {
+      "path": "tram-video-studio/references/editing.md",
+      "sha256": "adfebf630b08df82c4a8df38d4dae7fc84e9fdaa38d948dbf2c49f4189f95995",
+      "bytes": 3180
+    },
+    {
+      "path": "tram-video-studio/references/quality.md",
+      "sha256": "e45281624bf9caee94892dedb13a7cfd66ed13bb3c399d064601e14b4861f52b",
+      "bytes": 1689
+    },
+    {
+      "path": "tram-video-studio/references/reference-learning.md",
+      "sha256": "06c7a59934643235cd40bd668a24b55276d5ec2249b30b803836a60a1dcf6518",
+      "bytes": 5060
+    },
+    {
+      "path": "tram-video-studio/references/tools.md",
+      "sha256": "02957e8fe0f824e27fc16bc32be7ac2bf70e4fa8c13431a37bcc638b3c1e1e36",
+      "bytes": 2786
+    },
+    {
+      "path": "tram-video-studio/scripts/prepare_study.py",
+      "sha256": "65b804b6731443c3775f7a4446ed202adad28fd255117da7084a252d4635bf6e",
+      "bytes": 5854
+    },
+    {
+      "path": "tram-video-studio/scripts/test_prepare_study.py",
+      "sha256": "70fc1f68fe9f088542cece1093c5c769c3be749f735ac5391359eadf5a6dae15",
+      "bytes": 2138
+    }
+  ]
+}

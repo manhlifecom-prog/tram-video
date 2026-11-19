@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Codex video input brief0.1.0",
+  "type": "object",
+  "required": [
+    "briefVersion",
+    "sourceFiles",
+    "rights",
+    "goal",
+    "audience",
+    "output",
+    "captionDirection",
+    "review",
+    "profileId"
+  ],
+  "properties": {
+    "briefVersion": {
+      "const": "0.1.0"
+    },
+    "sourceFiles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "rights": {
+      "type": "object",
+      "required": [
+        "status",
+        "note"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "user-confirmed",
+            "needs-clarification"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "minLength": 10
+        }
+      }
+    },
+    "goal": {
+      "type": "string",
+      "minLength": 5
+    },
+    "audience": {
+      "type": "string",
+      "minLength": 3
+    },
+    "output": {
+      "type": "object",
+      "required": [
+        "aspectRatio",
+        "durationRangeSeconds"
+      ],
+      "properties": {
+        "aspectRatio": {
+          "const": "9:16"
+        },
+        "durationRangeSeconds": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number",
+              "minimum": 1
+            },
+            {
+              "type": "number",
+              "maximum": 90
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    },
+    "preserve": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "captionDirection": {
+      "type": "string",
+      "minLength": 10
+    },
+    "reference": {
+      "type": "object"
+    },
+    "additionalInstructions": {
+      "type": "string"
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "needMp4",
+        "publicationRequested"
+      ],
+      "properties": {
+        "needMp4": {
+          "type": "boolean"
+        },
+        "feedbackByTimestamp": {
+          "type": "boolean"
+        },
+        "publicationRequested": {
+          "const": false
+        }
+      }
+    },
+    "profileId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The explicitly chosen local sample profile; never infer a customer identity."
+    }
+  }
+}

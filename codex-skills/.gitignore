@@ -1,0 +1,3 @@
+__pycache__/
+*.pyc
+!codex-video-captions/proof/validator-tests.log

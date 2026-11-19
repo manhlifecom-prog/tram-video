@@ -1,0 +1,27 @@
+[
+  {
+    "file": "demo-v1.mp4",
+    "fullDecodeExitCode": 0,
+    "errors": ""
+  },
+  {
+    "file": "demo-v2.mp4",
+    "fullDecodeExitCode": 0,
+    "errors": ""
+  },
+  {
+    "file": "profile-a-new-input.mp4",
+    "fullDecodeExitCode": 0,
+    "errors": ""
+  },
+  {
+    "file": "profile-a-same-input.mp4",
+    "fullDecodeExitCode": 0,
+    "errors": ""
+  },
+  {
+    "file": "profile-b-same-input.mp4",
+    "fullDecodeExitCode": 0,
+    "errors": ""
+  }
+]

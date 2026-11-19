@@ -1,36 +1,29 @@
-# Bộ skill dựng video Trạm — gói công khai
+# Skill Trạm Video ·0.2.0-beta.1
 
-Tên gọi trong Codex: **`$tram-video-studio`**. Gói chứa quy trình dựng theo nội dung, học mẫu theo mốc, script chuẩn bị quan sát, ba motion primitive và scaffold Remotion MIT để bắt đầu. Đây là bộ skill dùng độc lập, không phải toàn bộ ứng dụng/máy chủ Trạm hoặc toàn bộ thư viện mẫu đã duyệt.
+Bản thử công khai hiện tại: **`$codex-video-captions`**. Dùng Codex trên máy của bạn, không cần tài khoản Trạm hoặc API key. Đọc [câu nhắn dán vào Codex](https://github.com/manhlifecom-prog/tram-video/blob/main/FOR-CODEX.md) để tải bản ghim commit và kiểm SHA256 trước cài.
 
-## Cài trên máy khác
+[Tải ZIP mới](../downloads/codex-video-captions-0.2.0-beta.1.zip) · [Cài và nâng cấp](INSTALL.md) · [Phạm vi mẫu](codex-video-captions/README.md) · [DNA riêng](codex-video-captions/references/PROFILE-GUIDE.md)
 
-1. Tải [ZIP skill](https://github.com/manhlifecom-prog/tram-video/raw/refs/heads/main/downloads/tram-video-studio-20261112.zip). Gói chỉ chứa skill và công cụ mẫu, không chứa dữ liệu vận hành Trạm.
-2. Người nhận giải nén vào thư mục riêng. Cần có Codex và Python 3.9+.
-3. Mở Terminal tại thư mục chứa `install.py`, chạy:
+Gói có skill/code/validator/renderer,5 video hình học tự tạo và font OFL; không có người thật, giọng, video khách, token, dữ liệu máy chủ hoặc nhạc riêng. Demo không chứng minh chất lượng dựng người nói, căn giọng hoặc một lệnh dựng xong.
 
-   macOS/Linux: `python3 install.py`
+## Cài sau khi tải và kiểm gói
 
-   Windows: `py install.py`
+Đọc install.py, chạy `python3 install.py --check`, sau đó `python3 install.py`. Windows dùng `py install.py`; Windows thật chưa được kiểm. Bộ cài dùng Python3.9+ standard library, không tải dependency, không thay quyền máy hoặc sandbox.
 
-4. Đóng/mở lại Codex, vào dự án video riêng và gọi `$tram-video-studio`.
+Mặc định chọn `$CODEX_HOME/skills` hoặc `~/.codex/skills`; tạo workspace riêng `~/Documents/CodexVideoProjects` cho input/output/dna/projects. Chọn `--target` và `--workspace` khác nếu cần. `--dry-run` chỉ kiểm kế hoạch, không ghi file.
 
-Có thể nhờ Codex trên máy mới: **“Đọc gói skill này, kiểm tra manifest rồi chạy install.py để cài tram-video-studio. Không cài dependencies hay render cho đến khi tôi đưa video.”**
+Cài lại cùng bộ code không thay file giống hệt. Code/entrypoint được quản lý có thay đổi sẽ được backup trước; không xóa file ngoài manifest. Profile/example người dùng đã sửa được giữ và báo rõ. Tên gọi cũ `$tram-video-studio` được cập nhật thành router tới bản mới; tài nguyên khác trong thư mục cũ không bị xóa. Không tự chọn DNA demo A/B cho nguồn thật.
 
-`--check` chỉ kiểm hash. `--target /path/to/skills` chọn nơi cài khác; mặc định dùng `$CODEX_HOME/skills` hoặc `~/.codex/skills`. Bản skill cũ được chuyển vào `skill-backups`, không xóa âm thầm. Muốn gỡ, xóa riêng thư mục `tram-video-studio` trong nơi đã cài; muốn khôi phục, dùng bản sao lưu.
+Đóng/mở lại Codex hoặc tạo chat mới. Chưa có video thì chỉ cài và kiểm, chưa render. Sau đó gọi `$codex-video-captions` với nguồn bạn có quyền dùng. Node/Remotion/Chrome/FFmpeg/ffprobe chỉ cần cho bước dựng/kiểm tương ứng; nếu thiếu, dùng cách cài thông thường có quyền người dùng cho phép, không tắt sandbox hoặc hạ bảo mật.
 
-## Sử dụng
+## Giới hạn
 
-Ví dụ: **“Dùng $tram-video-studio, xem các clip trong thư mục tôi cấp, tóm tắt nội dung và đề xuất hướng dựng. Giữ giọng thật, cắt trọn âm, minh họa theo nghĩa; chỉ dùng nhạc tôi cung cấp. Xuất bản dọc 1080p và bản xem nhẹ sau khi chốt hướng.”**
+Đã kiểm validator/reading-window/cache identity10tests và5 demo geometry; proof Mac dùng dependency có sẵn. Installer được kiểm fresh target, second install, backup legacy entrypoint, giữ customDNA/input, dry-run và chặn symlink.
 
-Để học mẫu: cung cấp video tham khảo có quyền sử dụng và yêu cầu phân tích cơ chế chữ/chuyển động/âm theo mốc, dựng đoạn đối chiếu bằng footage của người dùng. Không yêu cầu sao chép danh tính, nhạc hoặc toàn bộ video của người khác.
+Chưa kiểm Windows thật, máy sạch cài dependency, clean learner account từ raw tới final hoặc nghe/xem chủ quan toàn phim. Renderer cần localhost/browser. Không kèm hạn mức Codex, dịch vụ Trạm hoặc tự đăng bài. Không tuyên bố sẵn bán/one-click/mọi format.
 
-Người nhận dùng tài khoản Codex/công cụ của họ. FFmpeg/ffprobe, Node.js và Remotion chỉ cần khi thực hiện bước tương ứng; đọc `references/tools.md`. Không kèm API key, gói token, nhạc thương mại, video khách, gu cá nhân, cookie, chứng chỉ ký app hoặc quyền vào máy Trạm. Không chạy background worker, không gọi dịch vụ chủ Trạm, không tự đăng mạng xã hội.
+## Bản cũ và giấy phép
 
-## Phạm vi công khai và bảo mật
+[ZIP legacy2026.11.12](../downloads/tram-video-studio-20261112.zip) và [tài liệu legacy](legacy/README-20261112.md) chỉ để tham khảo/khôi phục, không là bản cài mặc định. Lịch sử Git, assets cũ và renderer OSS ở repo root giữ nguyên.
 
-- Gói được phát hành công khai trong repo MIT `manhlifecom-prog/tram-video`. Mọi người có thể tải, sử dụng, sửa và chia sẻ lại theo giấy phép; giữ thông báo tác giả/giấy phép đi kèm.
-- Không có cơ chế DRM hay khóa skill theo người dùng. Nội dung public sẽ đọc được; không đặt bí mật trong skill.
-- Bộ cài không dùng mạng, không xin quyền vào Trạm và kiểm SHA-256 trước khi thay đổi thư mục skill. Manifest phát hiện hỏng/đổi file, không thay thế chữ ký số.
-- Video, transcript, brief, tài khoản, khóa API và phong cách riêng của từng người phải nằm trong dự án riêng, không commit ngược vào gói.
-
-Scaffold `assets/starter` giữ giấy phép MIT và thông báo bên thứ ba của dự án `manhlifecom-prog/tram-video`. Không có bảo đảm mọi mẫu dựng giống tham khảo; cần kiểm thành phẩm thực tế theo quy trình kèm gói.
+Code giữ MIT của dự án, font SIL OFL1.1, dependency theo điều kiện riêng gồm Remotion. Public beta không phải duyệt khóa học, giá hoặc SLA. Giữ nguồn, DNA và đăng nhập riêng ngoài repo public.

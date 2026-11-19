@@ -1,0 +1,27 @@
+{
+  "version": "0.1.0",
+  "inputId": "geometry-technical-v1",
+  "sourceKind": "geometry",
+  "timingBasis": {
+    "kind": "synthetic-cue",
+    "note": "Synthetic visual events at1.8s and6.1s; not speech alignment or ASR.",
+    "listened": false
+  },
+  "output": "demo-v1.mp4",
+  "sha256": "ecd51dc0ae8a05b1b39919eed3e1be70a20be3a7a4e72843fb99eca9fc9a68a5",
+  "inputSha256": "0c0762ac3cf6cf033b1ec555487814e3973866792b62e7751ee62d6ec0934998",
+  "helperSha256": "d4d06cbc9cfff6917a6bb131e01079dbb04b63cf4fcaa778efaabd0079fa0ed3",
+  "width": 540,
+  "height": 960,
+  "duration": 8,
+  "fps": 24,
+  "codec": "h264",
+  "technicalRender": true,
+  "subjectiveContinuousListening": false,
+  "codexCleanSessionTest": false,
+  "cleanDependencyInstallTest": false,
+  "platform": "darwin",
+  "notes": [
+    "Original geometry and silence. No speaker/source-ASR or voice-sync acceptance is established."
+  ]
+}

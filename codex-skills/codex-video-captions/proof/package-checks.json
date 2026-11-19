@@ -1,0 +1,12 @@
+{
+  "privatePathAndSecretPatternHits": [],
+  "missingRelativeLinks": [],
+  "simpleFrontmatterCheck": {
+    "nameMatchesFolder": true,
+    "descriptionPresent": true,
+    "onlyRequiredFields": true
+  },
+  "noSymlinks": true,
+  "noNodeModules": true,
+  "officialQuickValidate": "Not run successfully: host Python lacks PyYAML; no dependency installed."
+}

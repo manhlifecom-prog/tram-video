@@ -1,0 +1,18 @@
+✔ bundle identity is stable for unchanged bytes, regardless of file mtime (7.878083ms)
+✔ same-name source replacement and a new public filename both invalidate a reusable bundle (5.671291ms)
+✔ font bytes and helper code changes invalidate a reusable bundle (4.425667ms)
+✔ accepts explicit phrase timing and an occasional word mode (0.579ms)
+✔ rejects implicit or early/out-of-order clocks (0.268833ms)
+✔ rejects split key phrases, lost punctuation and overlapping cues (0.120167ms)
+✔ rejects source traversal, remote URLs and false geometry ASR (0.223917ms)
+✔ feedback revision preserves clocks, second cue and source while changing the requested look (2.068708ms)
+✔ requires a local DNA and keeps its palette and preservation rules explicit (0.426708ms)
+✔ a short reading window reports the problem and never moves source onsets (0.105334ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 53.752625

@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Authored caption render input0.1.0",
+  "description": "Also run scripts/check-input.mjs for semantic line/timing invariants.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "duration",
+    "fps",
+    "source",
+    "timingBasis",
+    "captionTop",
+    "cues",
+    "profileId"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "0.1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]{1,80}$"
+    },
+    "duration": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 90
+    },
+    "fps": {
+      "enum": [
+        24,
+        25,
+        30
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "kind",
+        "provenance"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "geometry",
+            "video"
+          ]
+        },
+        "file": {
+          "type": "string"
+        },
+        "provenance": {
+          "type": "string",
+          "minLength": 10
+        }
+      }
+    },
+    "timingBasis": {
+      "type": "object",
+      "required": [
+        "kind",
+        "note",
+        "listened"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "source-asr",
+            "manual-source-anchors",
+            "synthetic-cue"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "minLength": 10
+        },
+        "listened": {
+          "type": "boolean"
+        }
+      }
+    },
+    "captionTop": {
+      "type": "number",
+      "minimum": 150,
+      "maximum": 1600
+    },
+    "cues": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 120,
+      "items": {
+        "type": "object",
+        "required": [
+          "start",
+          "end",
+          "text",
+          "choice"
+        ],
+        "properties": {
+          "start": {
+            "type": "number",
+            "minimum": 0
+          },
+          "end": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "key": {
+            "type": "string"
+          },
+          "choice": {
+            "type": "object",
+            "required": [
+              "start",
+              "mode",
+              "emotion",
+              "reason",
+              "lines",
+              "bodySize",
+              "keySize",
+              "tokenOnsets"
+            ],
+            "properties": {
+              "start": {
+                "type": "number",
+                "minimum": 0
+              },
+              "mode": {
+                "enum": [
+                  "reveal",
+                  "calm",
+                  "shine",
+                  "spring",
+                  "tension",
+                  "curious",
+                  "burst",
+                  "word-spring",
+                  "word-curious",
+                  "word-soft",
+                  "word-spark"
+                ]
+              },
+              "emotion": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 10
+              },
+              "lines": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 3,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "bodySize": {
+                "type": "number",
+                "minimum": 32,
+                "maximum": 70
+              },
+              "keySize": {
+                "type": "number",
+                "minimum": 32,
+                "maximum": 105
+              },
+              "tokenOnsets": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              },
+              "wordOnsets": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              },
+              "icon": {
+                "enum": [
+                  "heart",
+                  "question",
+                  "smile"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "profileId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]{1,60}$",
+      "description": "An explicit local profile in profiles/. Missing DNA is an error."
+    }
+  }
+}

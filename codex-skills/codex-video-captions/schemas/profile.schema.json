@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Local sample DNA profile0.1.0",
+  "type": "object",
+  "required": [
+    "profileVersion",
+    "id",
+    "name",
+    "scope",
+    "palette",
+    "typography",
+    "layout",
+    "motion",
+    "preserve",
+    "cropRule"
+  ],
+  "properties": {
+    "profileVersion": {
+      "const": "0.1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]{1,60}$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "palette": {
+      "type": "object",
+      "required": [
+        "background",
+        "surface",
+        "shape",
+        "shapeShade",
+        "text",
+        "accent",
+        "soft",
+        "muted"
+      ],
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^#[0-9a-fA-F]{6}$"
+      }
+    },
+    "typography": {
+      "type": "object",
+      "required": [
+        "fontId",
+        "bodyScale",
+        "keyScale",
+        "shadowOpacity"
+      ],
+      "properties": {
+        "fontId": {
+          "const": "be-vietnam-pro"
+        },
+        "bodyScale": {
+          "type": "number",
+          "minimum": 0.8,
+          "maximum": 1.1
+        },
+        "keyScale": {
+          "type": "number",
+          "minimum": 0.8,
+          "maximum": 1.1
+        },
+        "shadowOpacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.6
+        }
+      }
+    },
+    "layout": {
+      "type": "object",
+      "required": [
+        "captionOffsetY",
+        "captionLeft",
+        "captionRight",
+        "videoFit"
+      ],
+      "properties": {
+        "captionOffsetY": {
+          "type": "number"
+        },
+        "captionLeft": {
+          "type": "number",
+          "minimum": 75,
+          "maximum": 200
+        },
+        "captionRight": {
+          "type": "number",
+          "minimum": 75,
+          "maximum": 200
+        },
+        "videoFit": {
+          "enum": [
+            "contain",
+            "cover"
+          ]
+        }
+      }
+    },
+    "motion": {
+      "type": "object",
+      "required": [
+        "policy",
+        "allowedModes",
+        "maxSpecialCuesInRow"
+      ],
+      "properties": {
+        "policy": {
+          "const": "mostly-phrase-sparse-emphasis"
+        },
+        "allowedModes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "maxSpecialCuesInRow": {
+          "const": 1
+        }
+      }
+    },
+    "preserve": {
+      "type": "object",
+      "required": [
+        "faceIdentity",
+        "sourceVoice",
+        "liveSpeaker",
+        "semanticNegation"
+      ],
+      "additionalProperties": {
+        "const": true
+      }
+    },
+    "cropRule": {
+      "type": "string",
+      "minLength": 20
+    }
+  }
+}

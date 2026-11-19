@@ -1,0 +1,52 @@
+{
+  "profileVersion": "0.1.0",
+  "id": "demo-a",
+  "name": "Demo A · Warm focus",
+  "scope": "One presenter explainer sample; demo-only identity, no customer assets",
+  "palette": {
+    "background": "#0b1620",
+    "surface": "#243e51",
+    "shape": "#d5bc8a",
+    "shapeShade": "#947043",
+    "text": "#ffffff",
+    "accent": "#e7c785",
+    "soft": "#f4dfb7",
+    "muted": "#aab8c2"
+  },
+  "typography": {
+    "fontId": "be-vietnam-pro",
+    "bodyScale": 1,
+    "keyScale": 1,
+    "shadowOpacity": 0.45
+  },
+  "layout": {
+    "captionOffsetY": 0,
+    "captionLeft": 90,
+    "captionRight": 130,
+    "videoFit": "contain"
+  },
+  "motion": {
+    "policy": "mostly-phrase-sparse-emphasis",
+    "allowedModes": [
+      "reveal",
+      "calm",
+      "shine",
+      "spring",
+      "curious",
+      "tension",
+      "burst",
+      "word-soft",
+      "word-spring",
+      "word-curious",
+      "word-spark"
+    ],
+    "maxSpecialCuesInRow": 1
+  },
+  "preserve": {
+    "faceIdentity": true,
+    "sourceVoice": true,
+    "liveSpeaker": true,
+    "semanticNegation": true
+  },
+  "cropRule": "Choose the actual current speaker from this source; protect the face and mouth. No automatic tracking is supplied."
+}

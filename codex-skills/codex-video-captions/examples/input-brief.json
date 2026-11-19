@@ -1,0 +1,35 @@
+{
+  "briefVersion": "0.1.0",
+  "sourceFiles": [
+    "public/input/my-video.mp4"
+  ],
+  "rights": {
+    "status": "needs-clarification",
+    "note": "Đây là brief mẫu. Điền nguồn và xác nhận quyền dùng thực của bạn trước khi dựng."
+  },
+  "goal": "Giải thích một ý chuyên môn rõ và dễ xem.",
+  "audience": "Điền khán giả thực của video; nếu chưa biết thì hỏi, không tự bịa.",
+  "output": {
+    "aspectRatio": "9:16",
+    "durationRangeSeconds": [
+      30,
+      60
+    ]
+  },
+  "preserve": [
+    "Giọng và nhận diện người nói",
+    "Nghĩa, phủ định và điều kiện",
+    "Nguồn gốc và phần không bị yêu cầu sửa"
+  ],
+  "captionDirection": "Chia cụm theo nghĩa, chữ khớp giọng; nhấn có chọn lọc và tránh lặp một kiểu.",
+  "reference": {
+    "description": "Không bắt buộc. Chỉ đưa nguồn bạn có quyền xem và phần muốn học về cách dựng."
+  },
+  "additionalInstructions": "Demo A chỉ là profile mẫu. Xác nhận hoặc tạo profile của chính bạn trước khi dùng video thật. Điền lời dặn nguyên văn ở đây.",
+  "review": {
+    "needMp4": true,
+    "feedbackByTimestamp": true,
+    "publicationRequested": false
+  },
+  "profileId": "demo-a"
+}

@@ -1,5 +1,5 @@
 {
-  "releaseVersion": "0.3.0-beta.1",
+  "releaseVersion": "0.3.0-beta.4",
   "planContractVersion": "0.3.0-working.1",
   "directPackages": {
     "@remotion/bundler": "4.0.537",

@@ -13,4 +13,6 @@ Sau khi cài, mở chat Codex mới nếu cần để Codex nhận mô tả skil
 
 Nhạc nền chỉ dùng file hoặc link TikTok/Facebook do người yêu cầu chọn và có quyền dùng. Chưa có thì dựng không nhạc nền. Codex tự xử lý SFX theo cảnh. Kho nhạc mẫu cần chủ skill duyệt trước khi đưa vào gói.
 
+Skill đọc nội dung và tự tạo ADN dựng riêng cho từng video, từ chữ, màu, bố cục đến animation và hình minh họa. Có thể nghiên cứu hình tham khảo và dùng Google Flow của người dùng khi có quyền và công cụ phù hợp.
+
 [Bản hiện hành](https://raw.githubusercontent.com/manhlifecom-prog/tram-video/main/codex-skills/latest.json)

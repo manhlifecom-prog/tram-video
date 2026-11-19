@@ -12,8 +12,9 @@ const EXPECTED = {'@remotion/bundler': '4.0.537', '@remotion/renderer': '4.0.537
 export async function checkProject(root, options = {}) {
   root = await realpath(root);
   const pkg = JSON.parse(await readFile(path.join(root, 'package.json'), 'utf8'));
-  if (pkg.name !== 'codex-video-captions' || pkg.version !== '0.3.0-beta.1') {
-    throw Error('Wrong package identity/version; expected codex-video-captions 0.3.0-beta.1');
+  const release = JSON.parse(await readFile(new URL('../MANIFEST.json', import.meta.url), 'utf8'));
+  if (pkg.name !== release.entry || pkg.version !== release.releaseVersion) {
+    throw Error(`Wrong package identity/version; expected ${release.entry} ${release.releaseVersion}`);
   }
   const declared = {...pkg.dependencies, ...pkg.devDependencies};
   if (Object.keys(declared).length !== Object.keys(EXPECTED).length ||

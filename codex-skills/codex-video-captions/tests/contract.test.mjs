@@ -16,3 +16,5 @@ test('same-name media byte change invalidates real renderer fingerprint',async()
 test('all required plain-text entry reference paths resolve',async()=>{const {access}=await import('node:fs/promises');const s=await readFile(new URL('../SKILL.md',import.meta.url),'utf8');const refs=[...s.matchAll(/references\/[A-Za-z0-9._/-]+\.md/g)].map(m=>m[0]);assert.ok(refs.length);for(const r of refs)await access(new URL('../'+r,import.meta.url));});
 
 test('reject tiny spoken text instead of shrinking a whole phrase',()=>{const p=clone();p.subtitles[0].blocks[0].size=46;assert.throws(()=>checkPlan(p),/Spoken subtitle font/);p.subtitles[0].blocks[0].size=64;assert.equal(checkPlan(p).exampleOnly,true)});
+
+test('caption entry is an explicit supported authoring choice',()=>{const p=clone();p.subtitles[0].blocks[0].entry='wipe';assert.equal(checkPlan(p).exampleOnly,true);p.subtitles[0].blocks[0].entry='random';assert.throws(()=>checkPlan(p),/Unsupported caption entrance/)});

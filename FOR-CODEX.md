@@ -17,4 +17,6 @@ Skill đọc nội dung và tự tạo ADN dựng riêng cho từng video, từ 
 
 Bản hiện hành dùng chữ sạch, không viền đậm, cỡ đủ đọc và canh từng cụm theo lời. Với bản cũ, nâng cấp theo quy trình trên trước khi dựng.
 
+Bản hiện hành mặc định full hiệu ứng, tự thiết kế hình minh họa theo nội dung, kiểm nhịp chữ và lớp chữ sau người trước khi giao.
+
 [Bản hiện hành](https://raw.githubusercontent.com/manhlifecom-prog/tram-video/main/codex-skills/latest.json)

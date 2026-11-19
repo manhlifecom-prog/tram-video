@@ -1,6 +1,6 @@
-# codex-video-captions · 0.3.0-beta.5
+# codex-video-captions · 0.3.0-beta.6
 
-One local entry, release candidate 0.3.0-beta.5 (internal plan contract 0.3.0-working.1). Publication is pending independent artifact QA; preparation is not a claim of a completed public release. It contains a self-contained generic renderer, meaning-led and optional word captions, animated phone, source-time scenes, integer-frame EDL, person-occlusion adapter and optional licensed sound recipes. Public 0.2 remains unchanged.
+One local entry, release candidate 0.3.0-beta.6 (internal plan contract 0.3.0-working.1). Publication is pending independent artifact QA; preparation is not a claim of a completed public release. It contains a self-contained generic renderer, meaning-led and optional word captions, animated phone, source-time scenes, integer-frame EDL, person-occlusion adapter and optional licensed sound recipes. Public 0.2 remains unchanged.
 
 No customer's footage, voice, caption script, profile, music, alpha sequence or proprietary application backend is included. The bundled example is a synthetic contract, not a render-ready clip. Customer assets/config remain in the customer's project.
 

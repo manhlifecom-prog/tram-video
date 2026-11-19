@@ -1,6 +1,6 @@
 # Author one complete video
 
-Default to rich, purposeful effects across the edit. Reduce only when requested. Keep a stable phrase baseline and choose expressive emphasis according to meaning and emotion. Add a visual or motion beat where it advances the story. Check representative motion yourself; a request for a finished edit covers the local render.
+Default to full effects across the edit. Reduce only when requested. Read the [first-delivery check](first-delivery.md), create original assets for meaningful beats, and correct defects privately before sharing. Keep a stable phrase baseline and choose expressive emphasis according to meaning and emotion. Add a visual or motion beat where it advances the story. Check representative motion yourself; a request for a finished edit covers the local render.
 
 1. Intake rights, objective, audience, customer identity, exact source hash/orientation/color/duration, preferred reference/palette/music and requested pace. Universal readability/timing rules do not impose another customer's aesthetic.
 2. Probe the actual raw source. Use its existing hash-bound transcript or optional local ASR with explicit permission/resources. Do not use another edit's clock. Save raw transcript immutable; uncertain words remain flagged.
